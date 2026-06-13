@@ -1,0 +1,16 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Audience photo placeholder</title>
+  <desc id="desc">High-energy audience placeholder with cyberpunk colors.</desc>
+  <rect width="1200" height="800" fill="#08080C"/>
+  <rect x="36" y="36" width="1128" height="728" fill="#F7F3E8" stroke="#08080C" stroke-width="8"/>
+  <rect x="74" y="74" width="1052" height="650" fill="#11111A" stroke="#08080C" stroke-width="6"/>
+  <circle cx="220" cy="360" r="70" fill="#C4FF00"/>
+  <circle cx="390" cy="330" r="58" fill="#00D4FF"/>
+  <circle cx="550" cy="370" r="75" fill="#FF2BD6"/>
+  <circle cx="740" cy="320" r="62" fill="#F7F3E8"/>
+  <circle cx="920" cy="365" r="72" fill="#C4FF00"/>
+  <path d="M135 620C220 510 365 510 450 620M480 640C560 520 720 520 800 640M820 620C920 500 1080 510 1140 640" stroke="#00D4FF" stroke-width="20" stroke-linecap="round"/>
+  <rect x="130" y="110" width="510" height="74" fill="#FF2BD6" stroke="#F7F3E8" stroke-width="5"/>
+  <text x="154" y="160" fill="#08080C" font-family="Arial Black, Impact, sans-serif" font-size="36">AUDIENCE / EVENT PHOTO</text>
+  <text x="130" y="700" fill="#F7F3E8" font-family="Arial Black, Impact, sans-serif" font-size="38">REPLACE WITH 1200×800 CROWD SHOT</text>
+</svg>

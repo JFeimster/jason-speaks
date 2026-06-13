@@ -1,0 +1,14 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Speaker reel thumbnail placeholder</title>
+  <desc id="desc">Cyberpunk video thumbnail placeholder for a speaker reel.</desc>
+  <rect width="1280" height="720" fill="#08080C"/>
+  <rect x="34" y="34" width="1212" height="652" fill="#11111A" stroke="#C4FF00" stroke-width="8"/>
+  <path d="M0 150H1280M0 300H1280M0 450H1280M0 600H1280" stroke="#00D4FF" stroke-opacity=".18" stroke-width="4"/>
+  <path d="M0 0V720M160 0V720M320 0V720M480 0V720M640 0V720M800 0V720M960 0V720M1120 0V720" stroke="#fff" stroke-opacity=".08" stroke-width="3"/>
+  <circle cx="640" cy="360" r="112" fill="#FF2BD6" stroke="#F7F3E8" stroke-width="8"/>
+  <path d="M610 298L722 360L610 422V298Z" fill="#08080C" stroke="#08080C"/>
+  <rect x="90" y="80" width="435" height="78" fill="#C4FF00" stroke="#F7F3E8" stroke-width="4"/>
+  <text x="116" y="132" fill="#08080C" font-family="Arial Black, Impact, sans-serif" font-size="38">SPEAKER REEL</text>
+  <text x="92" y="630" fill="#F7F3E8" font-family="Arial Black, Impact, sans-serif" font-size="44">EMBED 60–120 SEC VIDEO HERE</text>
+  <text x="93" y="674" fill="#00D4FF" font-family="Arial, sans-serif" font-size="26">Stage clips • audience reaction • strongest soundbites</text>
+</svg>
