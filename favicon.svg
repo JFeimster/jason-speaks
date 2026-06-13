@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Jason Speaks favicon</title>
+  <desc id="desc">Neobrutalist JS monogram in cyberpunk fintech colors.</desc>
+  <rect width="512" height="512" rx="56" fill="#08080c"/>
+  <path d="M44 44h424v424H44z" fill="#c4ff00" stroke="#f8f8ee" stroke-width="18"/>
+  <path d="M74 74h364v364H74z" fill="#08080c" stroke="#ff2dd3" stroke-width="12"/>
+  <path d="M126 126h260v92H126z" fill="#00e5ff" stroke="#08080c" stroke-width="14"/>
+  <path d="M318 280c0 74-45 116-118 116-43 0-78-15-103-42l45-57c16 18 34 27 55 27 25 0 40-15 40-48V238h81v42z" fill="#f8f8ee"/>
+  <path d="M329 391c-39 0-73-12-100-35l38-59c20 17 42 25 65 25 18 0 29-6 29-17 0-13-14-17-45-24-50-11-80-31-80-76 0-48 39-80 101-80 35 0 65 10 91 30l-38 59c-18-14-37-21-56-21-16 0-25 6-25 16 0 12 13 16 44 23 53 12 83 33 83 78 0 49-40 81-107 81z" fill="#ffde00"/>
+</svg>
