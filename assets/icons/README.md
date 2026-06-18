@@ -1,6 +1,6 @@
-# 2. Icons
+# Icons
 
-## 2.1 Signature Keynote Topic Icons
+## Signature Keynote Topic Icons
 
 **Suggested folder:** `assets/icons/topics/`  
 **Recommended format:** SVG  
@@ -42,7 +42,7 @@ No readable text, no logos, no fake brands, no complex tiny details. Icons must 
 
 ---
 
-## 2.2 Audience Fit Icons
+## Audience Fit Icons
 
 **Suggested folder:** `assets/icons/audiences/`  
 **Recommended format:** SVG  
@@ -76,7 +76,7 @@ No readable text, no logos, no fake institution names, no corporate brand marks.
 
 ---
 
-## 2.3 CTA Icon Set
+## CTA Icon Set
 
 **Suggested folder:** `assets/icons/cta/`  
 **Recommended format:** SVG  
@@ -110,7 +110,7 @@ Icons should be clean, high contrast, and usable next to buttons. No readable te
 
 ---
 
-## 2.4 Utility UI Icons
+## Utility UI Icons
 
 **Suggested folder:** `assets/icons/ui/`  
 **Recommended format:** SVG  
