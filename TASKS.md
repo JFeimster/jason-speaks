@@ -69,3 +69,17 @@ The site must remain static and Vercel-friendly. Do not convert it to React, Nex
 - Lower-page images use lazy loading where appropriate.
 - Images include useful alt text.
 - `assets/images/README.md` remains aligned with the actual live usage.
+
+## 6. Generate remaining image backlog assets
+
+**Description:** Use `docs/image-generation-backlog.md` as the source of truth for the remaining image prompt backlog. Generate missing JPG/PNG assets, add them to `assets/images/`, and update live usage only when each image is ready and better than the current asset.
+
+**Why:** The landing page has a broader visual system than the few assets currently generated. The full prompt backlog should remain available so future image generation work does not get lost or overwritten.
+
+**Acceptance criteria:**
+
+- Do not delete prompts from `docs/image-generation-backlog.md`; update statuses instead.
+- Generate the missing assets listed in the backlog, prioritizing founder story, media kit preview, booking CTA energy, LinkedIn banner, and audience-specific visuals.
+- Add generated files to `assets/images/` using the planned filenames or clearly documented replacements.
+- Update `index.html`, `assets/images/README.md`, and `docs/asset-generation-prompts.md` only when an asset becomes active on the live page.
+- Preserve no-fake-proof rules: no fake event names, fake logos, fake awards, fake client names, fake audience numbers, or fake credentials.
