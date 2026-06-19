@@ -1,5 +1,83 @@
 # Jason Speaks — Asset Generation Prompt Library
 
+This file contains visual asset prompts and implementation notes for the Jason Feimster speaker profile landing page.
+
+Project style:
+
+**Neobrutalist × Futurist Fintech × Cyberpunk Hustler**
+
+Visual rules:
+
+- Black/off-white foundation
+- Electric lime, hot magenta, cyber blue, acid yellow accents
+- Thick black outlines
+- Hard shadows
+- Dashboard-style UI panels
+- Glitch details
+- High contrast
+- Premium fintech conference energy
+- Underground founder intensity
+- No fake logos
+- No fake awards
+- No fake event names
+- No invented testimonials
+- No readable text unless the asset explicitly requires Jason Feimster’s name or initials
+- No third-party brand marks
+- No copyrighted logos
+- No fake credentials
+
+---
+
+## Current Asset Status
+
+The following generated assets already exist in the repo and are now referenced by `index.html`.
+
+| Status | Asset | Path | Current Use |
+|---|---|---|---|
+| Active | JF monogram mark | `assets/images/jf-monogram-mark.png` | Header/nav mark and compact brand asset |
+| Active | Jason Feimster speaker logo | `assets/images/jason-feimster-logo-1.png` | Proof stack and media-kit visual |
+| Active | Hero speaker image | `assets/images/hero-speaker-placeholder.png` | Hero visual and founder/story visual |
+| Active | Audience event image | `assets/images/audience-photo-placeholder.png` | Tension / audience energy section |
+| Active | Open Graph image | `assets/images/og-image.jpg` | Social preview metadata |
+| Active | Branded reel/social image | `assets/images/og-image.png` | Speaker reel placeholder visual |
+| Active | Topic icon: fintech wealth | `assets/images/future-fintech-digital-wealth.png` | Topic card 01 |
+| Active | Topic icon: hustler OS | `assets/images/hustlers-operating-system.png` | Topic card 02 |
+| Active | Topic icon: AI automation | `assets/images/ai-automation-new-economy.png` | Topic card 03 |
+| Active | Topic icon: ownership | `assets/images/money-power-ownership.png` | Topic card 04 |
+| Active | Topic icon: reinvention | `assets/images/reinvention-real-time.png` | Topic card 05 |
+| Active | Topic icon: strategy mode | `assets/images/survival-to-strategy.png` | Topic card 06 |
+| Legacy fallback | Favicon | `assets/icons/favicon.svg` | Browser favicon |
+| Legacy fallback | Template SVGs | `assets/images/templates/*.svg` | Not currently used by the live page |
+| Legacy fallback | Proof logo placeholder SVGs | `assets/logos/placeholders/*.svg` | Not currently used by the live page |
+
+These assets are Jason-owned branding or generated visual assets. They are **not** third-party proof, client logos, event logos, testimonials, or awards.
+
+---
+
+## Current Live Page Usage
+
+`index.html` currently references:
+
+```html
+/assets/icons/favicon.svg
+/assets/images/jf-monogram-mark.png
+/assets/images/hero-speaker-placeholder.png
+/assets/images/audience-photo-placeholder.png
+/assets/images/future-fintech-digital-wealth.png
+/assets/images/hustlers-operating-system.png
+/assets/images/ai-automation-new-economy.png
+/assets/images/money-power-ownership.png
+/assets/images/reinvention-real-time.png
+/assets/images/survival-to-strategy.png
+/assets/images/og-image.png
+/assets/images/jason-feimster-logo-1.png
+/assets/images/og-image.jpg
+```
+
+---
+
+# Jason Speaks — Asset Generation Prompt Library
+
 This file contains suggested visual assets for the Jason Feimster speaker profile landing page.
 
 Project style:
