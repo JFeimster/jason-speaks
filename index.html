@@ -96,6 +96,7 @@
       border: var(--border);
       padding: 10px 14px;
       z-index: 999;
+      font-weight: 1000;
     }
 
     .skip-link:focus { left: 12px; }
@@ -129,11 +130,11 @@
     }
 
     .brand-mark {
-      width: 44px;
-      height: 44px;
+      width: 50px;
+      height: 50px;
       display: grid;
       place-items: center;
-      background: var(--lime);
+      background: var(--ink);
       border: var(--border);
       box-shadow: var(--shadow-small);
       transform: rotate(-4deg);
@@ -306,181 +307,127 @@
     }
 
     .card p { margin: 0; font-weight: 700; }
-
-    .placeholder {
-      border: 3px dashed var(--ink);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.6);
-      padding: 18px;
-      font-weight: 900;
-      min-height: 130px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-    }
-
-    .dark .placeholder, .magenta .placeholder { border-color: var(--white); background: rgba(255,255,255,0.1); }
+    .topic-icon { width: 100%; aspect-ratio: 1; object-fit: cover; border: 3px solid var(--ink); border-radius: 18px; margin-bottom: 16px; background: var(--paper); }
+    .topic-number { font-weight: 1000; font-size: 0.9rem; margin-bottom: 10px; }
 
     .stat-strip { display: grid; gap: 16px; margin-top: 24px; }
     .stat { border: var(--border); background: var(--white); border-radius: 20px; padding: 20px; box-shadow: var(--shadow-small); }
-    .stat strong { display: block; font-size: clamp(2rem, 6vw, 4.2rem); line-height: 0.9; letter-spacing: -0.08em; }
-    .stat span { display: block; margin-top: 8px; font-weight: 900; text-transform: uppercase; }
+    .stat strong { display: block; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1; letter-spacing: -0.07em; }
+    .stat span { font-weight: 900; text-transform: uppercase; }
 
-    .topic-number {
-      width: 54px;
-      height: 54px;
-      border: var(--border);
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: var(--yellow);
-      font-weight: 1000;
-      box-shadow: var(--shadow-small);
-      margin-bottom: 16px;
+    .logo-grid { display: grid; gap: 18px; }
+    .brand-proof-card { display: grid; gap: 16px; align-items: center; }
+    .brand-proof-card img { width: min(260px, 100%); margin-inline: auto; border-radius: 18px; }
+
+    .video-shell {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      border-radius: 18px;
     }
 
-    .process { counter-reset: steps; }
-    .process .card { position: relative; }
-    .process .card::before {
-      counter-increment: steps;
-      content: "0" counter(steps);
-      position: absolute;
-      right: 18px;
-      top: 16px;
-      color: rgba(5,5,5,0.12);
-      font-size: 5rem;
-      line-height: 1;
-      font-weight: 1000;
-      letter-spacing: -0.1em;
-    }
-
-    .quote { font-size: clamp(1.4rem, 3vw, 2.2rem); line-height: 1.05; font-weight: 1000; letter-spacing: -0.055em; }
-
-    .comparison { overflow-x: auto; border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--white); }
-    table { width: 100%; border-collapse: collapse; min-width: 720px; }
-    th, td { border-bottom: 3px solid var(--ink); border-right: 3px solid var(--ink); padding: 16px; text-align: left; font-weight: 800; vertical-align: top; }
-    th { background: var(--ink); color: var(--white); text-transform: uppercase; }
-    td.highlight { background: var(--lime); font-weight: 1000; }
-
-    .media-block { padding: 20px; }
-    .video-shell { position: relative; }
     .video-shell::after {
       content: "▶";
       position: absolute;
       inset: 0;
       display: grid;
       place-items: center;
-      font-size: clamp(3rem, 8vw, 5.5rem);
-      color: var(--ink);
-      text-shadow: 5px 5px 0 var(--lime);
-      pointer-events: none;
+      font-size: clamp(3rem, 9vw, 7rem);
+      color: var(--lime);
+      text-shadow: 5px 5px 0 var(--ink), -5px -5px 0 var(--magenta);
     }
 
-    .logo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .logo-box {
-      min-height: 84px;
-      border: 3px solid var(--ink);
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      padding: 8px;
-      background: rgba(255,255,255,0.8);
-    }
-    .logo-box img { width: 100%; height: 100%; object-fit: contain; border-radius: 10px; }
+    .comparison { overflow-x: auto; border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--white); }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    th, td { border: 3px solid var(--ink); padding: 18px; text-align: left; font-weight: 800; }
+    th { background: var(--ink); color: var(--white); text-transform: uppercase; }
+    td.highlight { background: var(--lime); }
 
-    .faq details { background: var(--white); border: var(--border); border-radius: 18px; box-shadow: var(--shadow-small); padding: 18px; }
-    .faq summary { cursor: pointer; font-weight: 1000; text-transform: uppercase; font-size: 1.05rem; }
-    .faq p { margin: 12px 0 0; font-weight: 700; color: var(--muted); }
-
-    .booking { background: var(--ink); color: var(--white); border-top: var(--border); border-bottom: var(--border); }
-    .booking .lead { color: #f0f0f0; }
-    form { display: grid; gap: 14px; }
-    label { font-weight: 1000; text-transform: uppercase; }
+    form { display: grid; gap: 16px; }
+    label { display: block; font-weight: 1000; text-transform: uppercase; margin-bottom: 6px; }
     input, select, textarea {
       width: 100%;
       border: 3px solid var(--ink);
       border-radius: 14px;
-      padding: 14px;
-      font: inherit;
-      font-weight: 700;
+      padding: 13px 14px;
       background: var(--white);
       color: var(--ink);
-      outline: none;
+      font: inherit;
+      font-weight: 750;
     }
-    input:focus, select:focus, textarea:focus { box-shadow: 0 0 0 4px var(--cyan); }
+
     textarea { min-height: 130px; resize: vertical; }
-    .form-note { font-size: 0.9rem; font-weight: 800; opacity: 0.86; }
+    .form-note { font-weight: 800; font-size: 0.9rem; }
 
-    .footer { padding: 34px 0; background: var(--paper); }
-    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; font-weight: 900; text-transform: uppercase; }
-    .floating-cta { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 30; display: none; }
+    details { border: var(--border); border-radius: 18px; background: var(--white); padding: 18px; box-shadow: var(--shadow-small); }
+    summary { cursor: pointer; font-weight: 1000; text-transform: uppercase; }
+    details p { font-weight: 700; }
 
-    .reveal { animation: popIn 550ms ease both; }
-    @keyframes popIn { from { opacity: 0; transform: translateY(16px) rotate(-0.5deg); } to { opacity: 1; transform: translateY(0) rotate(0); } }
+    .floating-cta { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 30; }
+    .footer { border-top: var(--border); background: var(--ink); color: var(--white); padding: 34px 0 92px; }
+    .footer-inner { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; font-weight: 900; }
+
+    .reveal { animation: popIn 500ms ease both; }
+    @keyframes popIn { from { opacity: 0; transform: translateY(18px) rotate(-1deg); } to { opacity: 1; transform: translateY(0) rotate(0deg); } }
 
     @media (min-width: 760px) {
-      .hero { padding: 92px 0 72px; }
-      .hero-grid { grid-template-columns: 1.15fr 0.85fr; }
-      .grid-2 { grid-template-columns: repeat(2, 1fr); }
+      .hero-grid, .grid-2 { grid-template-columns: 1fr 0.86fr; }
       .grid-3 { grid-template-columns: repeat(3, 1fr); }
-      .stat-strip { grid-template-columns: repeat(3, 1fr); }
-      .logo-grid { grid-template-columns: repeat(3, 1fr); }
+      .stat-strip, .logo-grid { grid-template-columns: repeat(3, 1fr); }
+      .floating-cta { display: none; }
+      .footer { padding-bottom: 34px; }
+    }
+
+    @media (min-width: 980px) {
       .nav-links { display: flex; }
-      .floating-cta { left: auto; right: 22px; width: auto; }
     }
 
     @media (max-width: 759px) {
       body { padding-bottom: 92px; }
-      .nav-inner { min-height: 70px; }
-      .nav .btn { display: none; }
+      .hero { padding-top: 42px; }
+      .btn { width: 100%; }
       .hero-card { transform: none; }
-      .cta-row .btn { width: 100%; }
-      .floating-cta { display: block; }
-      section { padding: 58px 0; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
     }
   </style>
 </head>
-
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-  <header class="nav" aria-label="Main navigation">
+  <header class="nav" role="banner">
     <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="Jason Feimster speaker home">
-        <span class="brand-mark" aria-hidden="true"><img src="/assets/icons/favicon.svg" alt="" /></span>
-        <span>Jason S. Feimster<br />Speaker Profile</span>
+      <a class="brand" href="#top" aria-label="Jason Feimster speaker profile home">
+        <span class="brand-mark" aria-hidden="true"><img src="/assets/images/jf-monogram-mark.png" width="512" height="512" alt="" /></span>
+        <span>Jason Feimster<br />Speaker Profile</span>
       </a>
 
-      <nav class="nav-links" aria-label="Page sections">
+      <nav class="nav-links" aria-label="Primary navigation">
         <a href="#topics">Topics</a>
         <a href="#reel">Reel</a>
-        <a href="#proof">Proof</a>
-        <a href="#booking">Book</a>
+        <a href="#media-kit">Media Kit</a>
+        <a href="#booking">Booking</a>
       </nav>
 
-      <a href="#booking" class="btn">Book Me</a>
+      <a href="#booking" class="btn">Request Availability</a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
+    <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
-        <div class="reveal">
-          <div class="eyebrow">Future of money × AI × ownership</div>
-          <h1>Bring <span class="glitch">2035</span> energy to your stage.</h1>
+        <div>
+          <div class="eyebrow">Future of money speaker</div>
+          <h1 id="hero-title">Fintech, AI, ownership, and <span class="glitch">underdog energy</span>.</h1>
           <p class="hero-copy">
-            Jason Feimster helps ambitious professionals, founders, creators, students, and leaders understand where money, technology, culture, and ambition collide — and how to move before the future arrives.
+            Jason Feimster helps ambitious rooms understand the new economy — and gives them the language, urgency, and operating mindset to move before the future politely runs them over.
           </p>
-
-          <div class="cta-row" aria-label="Primary actions">
+          <div class="cta-row">
             <a href="#booking" class="btn">Bring This Energy to Your Stage</a>
             <a href="#reel" class="btn secondary">Watch the Reel</a>
           </div>
-
           <div class="trust-row" aria-label="Positioning indicators">
             <span class="chip">Fintech-native</span>
             <span class="chip">AI-ready</span>
@@ -490,8 +437,8 @@
         </div>
 
         <aside class="hero-card reveal" aria-label="Speaker hero visual">
-          <img class="asset-img" src="/assets/images/templates/hero-speaker-placeholder.svg" width="1600" height="1000" alt="Stylized placeholder image for Jason Feimster speaking on fintech, AI, ownership, and the future of money." />
-          <p class="asset-caption">Current repo asset: replace later with a real stage photo or generated hero portrait.</p>
+          <img class="asset-img" src="/assets/images/hero-speaker-placeholder.png" width="1600" height="2048" alt="Stylized cyberpunk illustration of Jason Feimster speaking on stage with fintech and AI dashboards behind him." />
+          <p class="asset-caption">Generated speaker hero asset now active.</p>
         </aside>
       </div>
     </section>
@@ -515,31 +462,33 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Proof stack</span>
-          <h2 id="proof-title">Credibility without the fake logo circus.</h2>
+          <h2 id="proof-title">Built from the field, not the faculty lounge.</h2>
           <p class="lead">
-            This page is built to showcase real proof when available. Until then, the repo uses honest placeholder assets instead of invented logos, fake testimonials, fake awards, or imaginary event history.
+            No fake logo circus. This section uses Jason-owned brand assets and honest proof placeholders until verified event logos, testimonials, and audience results are available.
           </p>
         </div>
 
-        <div class="logo-grid" aria-label="Future event and media proof placeholders">
-          <div class="logo-box"><img src="/assets/logos/placeholders/logo-1.svg" width="420" height="180" alt="Placeholder card for a future real event logo." /></div>
-          <div class="logo-box"><img src="/assets/logos/placeholders/logo-2.svg" width="420" height="180" alt="Placeholder card for a future real media or conference logo." /></div>
-          <div class="logo-box"><img src="/assets/logos/placeholders/logo-3.svg" width="420" height="180" alt="Placeholder card for a future real partner, school, or organization logo." /></div>
+        <div class="logo-grid" aria-label="Brand proof assets and honest proof placeholders">
+          <div class="card brand-proof-card">
+            <img src="/assets/images/jason-feimster-logo-1.png" width="1024" height="1024" alt="Jason Feimster speaker logo asset." />
+            <h3>Speaker brand asset</h3>
+            <p>Use for media kit, deck cover, social profile, and future event organizer materials.</p>
+          </div>
+          <div class="card cyan brand-proof-card">
+            <img src="/assets/images/jf-monogram-mark.png" width="1024" height="1024" alt="JF monogram logo mark for Jason Feimster." />
+            <h3>Compact monogram</h3>
+            <p>Use for favicon, avatar, navigation, badges, social thumbnails, and small-format branding.</p>
+          </div>
+          <div class="card alt">
+            <h3>Real proof goes here</h3>
+            <p>Add verified event logos, host quotes, podcast appearances, media links, and audience feedback when available. No fake receipts. No credibility cosplay.</p>
+          </div>
         </div>
 
         <div class="stat-strip">
-          <div class="stat">
-            <strong>TBD</strong>
-            <span>Keynotes, panels, workshops, or interviews</span>
-          </div>
-          <div class="stat">
-            <strong>TBD</strong>
-            <span>Audience members reached</span>
-          </div>
-          <div class="stat">
-            <strong>TBD</strong>
-            <span>Industries, campuses, or communities impacted</span>
-          </div>
+          <div class="stat"><strong>TBD</strong><span>Keynotes, panels, workshops, or interviews</span></div>
+          <div class="stat"><strong>TBD</strong><span>Audience members reached</span></div>
+          <div class="stat"><strong>TBD</strong><span>Industries, campuses, or communities impacted</span></div>
         </div>
       </div>
     </section>
@@ -555,8 +504,8 @@
         </div>
 
         <div class="asset-card">
-          <img class="asset-img" src="/assets/images/templates/audience-photo-placeholder.svg" width="1200" height="800" alt="Stylized audience placeholder for a high-energy fintech, AI, and entrepreneurship keynote." />
-          <p class="asset-caption">Use this slot for real audience energy, room shots, or a polished generated crowd visual.</p>
+          <img class="asset-img" src="/assets/images/audience-photo-placeholder.png" width="1600" height="960" alt="Wide cinematic audience at a future-focused fintech and entrepreneurship event watching a speaker on stage." />
+          <p class="asset-caption">Generated audience event-energy asset now active.</p>
         </div>
       </div>
     </section>
@@ -573,36 +522,42 @@
 
         <div class="grid-3">
           <article class="card alt">
+            <img class="topic-icon" src="/assets/images/future-fintech-digital-wealth.png" width="1024" height="1024" alt="Icon representing future fintech and digital wealth." />
             <div class="topic-number">01</div>
             <h3>Future of Fintech & Digital Wealth</h3>
             <p>How AI, payments, digital platforms, and financial innovation are changing access, ownership, and the rules of wealth-building.</p>
           </article>
 
           <article class="card cyan">
+            <img class="topic-icon" src="/assets/images/hustlers-operating-system.png" width="1024" height="1024" alt="Icon representing the hustler operating system and execution dashboard." />
             <div class="topic-number">02</div>
             <h3>The Hustler’s Operating System</h3>
             <p>A mindset keynote on discipline, resilience, execution, and building momentum when the odds were not designed in your favor.</p>
           </article>
 
           <article class="card magenta">
+            <img class="topic-icon" src="/assets/images/ai-automation-new-economy.png" width="1024" height="1024" alt="Icon representing AI automation and the new economy." />
             <div class="topic-number">03</div>
             <h3>AI, Automation & the New Economy</h3>
             <p>How professionals and businesses can adapt their skills, workflows, and mindset before technology turns comfort into risk.</p>
           </article>
 
           <article class="card">
+            <img class="topic-icon" src="/assets/images/money-power-ownership.png" width="1024" height="1024" alt="Icon representing money power ownership and capital access." />
             <div class="topic-number">04</div>
             <h3>Money, Power & Ownership</h3>
             <p>A practical, inspirational talk on financial literacy, wealth psychology, and why ownership is the real flex in the new economy.</p>
           </article>
 
           <article class="card dark">
+            <img class="topic-icon" src="/assets/images/reinvention-real-time.png" width="1024" height="1024" alt="Icon representing reinvention in real time and rapid transformation." />
             <div class="topic-number">05</div>
             <h3>Reinvention in Real Time</h3>
             <p>How to evolve your skills, brand, network, and business model while the world keeps moving underneath your feet.</p>
           </article>
 
           <article class="card alt">
+            <img class="topic-icon" src="/assets/images/survival-to-strategy.png" width="1024" height="1024" alt="Icon representing survival mode turning into strategy mode." />
             <div class="topic-number">06</div>
             <h3>From Survival Mode to Strategy Mode</h3>
             <p>Turning pressure, uncertainty, and ambition into focused action — without waiting for perfect timing or permission.</p>
@@ -622,18 +577,9 @@
         </div>
 
         <div class="grid-3 process">
-          <div class="card">
-            <h3>Decode the shift</h3>
-            <p>Make the invisible forces visible: automation, digital wealth, new career leverage, ownership, and the speed of change.</p>
-          </div>
-          <div class="card cyan">
-            <h3>Challenge the default</h3>
-            <p>Break the passive scripts that keep people waiting: permission, perfect timing, institutional validation, and outdated money beliefs.</p>
-          </div>
-          <div class="card alt">
-            <h3>Activate the room</h3>
-            <p>Give people a clear next move: learn the tools, build the skill stack, own the asset, make the ask, and execute with urgency.</p>
-          </div>
+          <div class="card"><h3>Decode the shift</h3><p>Make the invisible forces visible: automation, digital wealth, new career leverage, ownership, and the speed of change.</p></div>
+          <div class="card cyan"><h3>Challenge the default</h3><p>Break the passive scripts that keep people waiting: permission, perfect timing, institutional validation, and outdated money beliefs.</p></div>
+          <div class="card alt"><h3>Activate the room</h3><p>Give people a clear next move: learn the tools, build the skill stack, own the asset, make the ask, and execute with urgency.</p></div>
         </div>
       </div>
     </section>
@@ -641,10 +587,10 @@
     <section id="reel" aria-labelledby="reel-title">
       <div class="container grid-2">
         <div class="media-block">
-          <a class="video-shell" href="#booking" aria-label="Speaker reel placeholder. Request availability until a real reel is added.">
-            <img class="asset-img" src="/assets/images/templates/speaker-reel-thumbnail.svg" width="1280" height="720" alt="Cyberpunk speaker reel thumbnail placeholder for Jason Feimster." />
+          <a class="video-shell" href="#booking" aria-label="Speaker reel preview. Request availability until a verified reel is embedded.">
+            <img class="asset-img" src="/assets/images/og-image.png" width="1792" height="1024" alt="Jason Feimster branded speaker reel thumbnail with cyberpunk fintech visuals." />
           </a>
-          <p class="asset-caption">Current reel placeholder: replace with real 60–120 second speaker reel or verified YouTube embed.</p>
+          <p class="asset-caption">Using generated branded reel/social image until a verified 60–120 second speaker reel is embedded.</p>
         </div>
 
         <div class="section-head">
@@ -669,30 +615,12 @@
         </div>
 
         <div class="grid-3">
-          <div class="card">
-            <h3>Fintech & innovation conferences</h3>
-            <p>For audiences tracking payments, AI, financial access, digital assets, wealth tech, and the future of economic opportunity.</p>
-          </div>
-          <div class="card cyan">
-            <h3>Corporate transformation teams</h3>
-            <p>For organizations that need their people energized around change, adaptation, execution, and future-readiness.</p>
-          </div>
-          <div class="card alt">
-            <h3>Universities & business schools</h3>
-            <p>For students and early-career professionals navigating career pressure, economic mobility, and the AI-shaped workforce.</p>
-          </div>
-          <div class="card magenta">
-            <h3>Startup ecosystems</h3>
-            <p>For founders, operators, accelerators, and creator communities who need sharper thinking around leverage and ownership.</p>
-          </div>
-          <div class="card">
-            <h3>Professional associations</h3>
-            <p>For members who want practical, inspirational insight on technology, leadership, money, and staying relevant.</p>
-          </div>
-          <div class="card dark">
-            <h3>Community organizations</h3>
-            <p>For rooms focused on empowerment, financial literacy, access, ambition, and helping people move from survival to strategy.</p>
-          </div>
+          <div class="card"><h3>Fintech & innovation conferences</h3><p>For audiences tracking payments, AI, financial access, digital assets, wealth tech, and the future of economic opportunity.</p></div>
+          <div class="card cyan"><h3>Corporate transformation teams</h3><p>For organizations that need their people energized around change, adaptation, execution, and future-readiness.</p></div>
+          <div class="card alt"><h3>Universities & business schools</h3><p>For students and early-career professionals navigating career pressure, economic mobility, and the AI-shaped workforce.</p></div>
+          <div class="card magenta"><h3>Startup ecosystems</h3><p>For founders, operators, accelerators, and creator communities who need sharper thinking around leverage and ownership.</p></div>
+          <div class="card"><h3>Professional associations</h3><p>For members who want practical, inspirational insight on technology, leadership, money, and staying relevant.</p></div>
+          <div class="card dark"><h3>Community organizations</h3><p>For rooms focused on empowerment, financial literacy, access, ambition, and helping people move from survival to strategy.</p></div>
         </div>
       </div>
     </section>
@@ -706,34 +634,12 @@
 
         <div class="comparison" role="region" aria-label="Speaker comparison table" tabindex="0">
           <table>
-            <thead>
-              <tr>
-                <th>What bookers need</th>
-                <th>Generic motivational speaker</th>
-                <th>Jason Feimster speaker profile</th>
-              </tr>
-            </thead>
+            <thead><tr><th>What bookers need</th><th>Generic motivational speaker</th><th>Jason Feimster speaker profile</th></tr></thead>
             <tbody>
-              <tr>
-                <td>Freshness</td>
-                <td>Universal advice that could have been delivered ten years ago.</td>
-                <td class="highlight">Timely perspective on fintech, AI, ownership, work, and the new economy.</td>
-              </tr>
-              <tr>
-                <td>Energy</td>
-                <td>Feel-good inspiration with vague takeaways.</td>
-                <td class="highlight">High-energy activation with practical mental models and next moves.</td>
-              </tr>
-              <tr>
-                <td>Audience relevance</td>
-                <td>Broad messages that may not match ambitious builders or operators.</td>
-                <td class="highlight">Built for founders, students, professionals, creators, teams, and communities ready to move.</td>
-              </tr>
-              <tr>
-                <td>Visual brand</td>
-                <td>Soft speaker branding and predictable stage photos.</td>
-                <td class="highlight">Neobrutalist, futurist fintech, cyberpunk hustler energy that stands out immediately.</td>
-              </tr>
+              <tr><td>Freshness</td><td>Universal advice that could have been delivered ten years ago.</td><td class="highlight">Timely perspective on fintech, AI, ownership, work, and the new economy.</td></tr>
+              <tr><td>Energy</td><td>Feel-good inspiration with vague takeaways.</td><td class="highlight">High-energy activation with practical mental models and next moves.</td></tr>
+              <tr><td>Audience relevance</td><td>Broad messages that may not match ambitious builders or operators.</td><td class="highlight">Built for founders, students, professionals, creators, teams, and communities ready to move.</td></tr>
+              <tr><td>Visual brand</td><td>Soft speaker branding and predictable stage photos.</td><td class="highlight">Neobrutalist, futurist fintech, cyberpunk hustler energy that stands out immediately.</td></tr>
             </tbody>
           </table>
         </div>
@@ -742,14 +648,9 @@
 
     <section aria-labelledby="story-title">
       <div class="container grid-2">
-        <div class="card dark">
-          <h3>Founder / speaker story placeholder</h3>
-          <p>
-            Insert the real story here: the moment old rules around money, work, access, or ambition were not enough — and why Jason became obsessed with helping people understand the new economy before it outpaces them.
-          </p>
-          <div class="placeholder" style="margin-top: 18px;">
-            Next asset slot: founder-story-portrait.jpg — 1200×1600 portrait with confident, cinematic, future-facing, premium street-smart energy.
-          </div>
+        <div class="asset-card">
+          <img class="asset-img" src="/assets/images/hero-speaker-placeholder.png" width="1600" height="2048" alt="Stylized Jason Feimster speaker portrait with fintech dashboards and cyberpunk stage lighting." />
+          <p class="asset-caption">Founder / speaker story visual using generated Jason asset.</p>
         </div>
 
         <div class="section-head">
@@ -770,18 +671,9 @@
         </div>
 
         <div class="grid-3">
-          <blockquote class="card">
-            <p class="quote">“[Insert testimonial about audience energy, clarity, and practical takeaways.]”</p>
-            <p style="margin-top: 16px;">— [Event organizer name], [Role / Organization]</p>
-          </blockquote>
-          <blockquote class="card cyan">
-            <p class="quote">“[Insert testimonial about making fintech, AI, or ownership feel understandable and urgent.]”</p>
-            <p style="margin-top: 16px;">— [Corporate leader / Program director]</p>
-          </blockquote>
-          <blockquote class="card alt">
-            <p class="quote">“[Insert testimonial about inspiring students, founders, or professionals to take action.]”</p>
-            <p style="margin-top: 16px;">— [University / Conference host]</p>
-          </blockquote>
+          <blockquote class="card"><p class="quote">“[Insert testimonial about audience energy, clarity, and practical takeaways.]”</p><p style="margin-top: 16px;">— [Event organizer name], [Role / Organization]</p></blockquote>
+          <blockquote class="card cyan"><p class="quote">“[Insert testimonial about making fintech, AI, or ownership feel understandable and urgent.]”</p><p style="margin-top: 16px;">— [Corporate leader / Program director]</p></blockquote>
+          <blockquote class="card alt"><p class="quote">“[Insert testimonial about inspiring students, founders, or professionals to take action.]”</p><p style="margin-top: 16px;">— [University / Conference host]</p></blockquote>
         </div>
       </div>
     </section>
@@ -796,14 +688,11 @@
           </p>
         </div>
 
-        <div class="card alt">
+        <div class="card alt brand-proof-card">
+          <img src="/assets/images/jason-feimster-logo-1.png" width="1024" height="1024" alt="Jason Feimster speaker brand mark for media kit materials." />
           <h3>Recommended media kit contents</h3>
-          <p>
-            Short bio, long bio, approved headshots, keynote topics, speaker intro, stage photos, testimonial pull quotes, client/event logos, AV requirements, contact details, and booking process.
-          </p>
-          <div class="cta-row">
-            <a href="/docs/media-kit.md" class="btn dark">Download Media Kit</a>
-          </div>
+          <p>Short bio, long bio, approved headshots, keynote topics, speaker intro, stage photos, real testimonial pull quotes, verified event logos, AV requirements, contact details, and booking process.</p>
+          <div class="cta-row"><a href="/docs/media-kit.md" class="btn dark">Download Media Kit</a></div>
         </div>
       </div>
     </section>
@@ -824,65 +713,18 @@
         </div>
 
         <div class="card" style="color: var(--ink);">
-          <!-- Replace # with your form endpoint, CRM embed, or scheduling link. -->
           <form id="bookingForm" action="#" method="post" novalidate>
-            <div>
-              <label for="name">Your name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Booker" />
-            </div>
-
-            <div>
-              <label for="email">Work email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@event.com" />
-            </div>
-
-            <div>
-              <label for="organization">Organization</label>
-              <input id="organization" name="organization" type="text" required placeholder="Conference / Company / University" />
-            </div>
-
+            <div><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Booker" /></div>
+            <div><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@event.com" /></div>
+            <div><label for="organization">Organization</label><input id="organization" name="organization" type="text" required placeholder="Conference / Company / University" /></div>
             <div class="grid-2">
-              <div>
-                <label for="date">Event date</label>
-                <input id="date" name="date" type="date" />
-              </div>
-
-              <div>
-                <label for="audience">Audience size</label>
-                <select id="audience" name="audience">
-                  <option value="">Select one</option>
-                  <option>Under 100</option>
-                  <option>100–500</option>
-                  <option>500–1,500</option>
-                  <option>1,500+</option>
-                  <option>Not sure yet</option>
-                </select>
-              </div>
+              <div><label for="date">Event date</label><input id="date" name="date" type="date" /></div>
+              <div><label for="audience">Audience size</label><select id="audience" name="audience"><option value="">Select one</option><option>Under 100</option><option>100–500</option><option>500–1,500</option><option>1,500+</option><option>Not sure yet</option></select></div>
             </div>
-
-            <div>
-              <label for="topic">Topic interest</label>
-              <select id="topic" name="topic" required>
-                <option value="">Select a keynote theme</option>
-                <option>Future of Fintech & Digital Wealth</option>
-                <option>The Hustler’s Operating System</option>
-                <option>AI, Automation & the New Economy</option>
-                <option>Money, Power & Ownership</option>
-                <option>Reinvention in Real Time</option>
-                <option>From Survival Mode to Strategy Mode</option>
-                <option>Custom talk / not sure yet</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="message">Tell me about the event</label>
-              <textarea id="message" name="message" placeholder="Event goals, location, audience, budget range, and what you want people to feel or do after the talk."></textarea>
-            </div>
-
+            <div><label for="topic">Topic interest</label><select id="topic" name="topic" required><option value="">Select a keynote theme</option><option>Future of Fintech & Digital Wealth</option><option>The Hustler’s Operating System</option><option>AI, Automation & the New Economy</option><option>Money, Power & Ownership</option><option>Reinvention in Real Time</option><option>From Survival Mode to Strategy Mode</option><option>Custom talk / not sure yet</option></select></div>
+            <div><label for="message">Tell me about the event</label><textarea id="message" name="message" placeholder="Event goals, location, audience, budget range, and what you want people to feel or do after the talk."></textarea></div>
             <button class="btn full" type="submit">Request Availability</button>
-            <p class="form-note" id="formMessage" aria-live="polite">
-              Placeholder form only. Connect this to your CRM, email platform, or booking workflow before publishing.
-            </p>
+            <p class="form-note" id="formMessage" aria-live="polite">Placeholder form only. Connect this to your CRM, email platform, or booking workflow before publishing.</p>
           </form>
         </div>
       </div>
@@ -890,41 +732,14 @@
 
     <section class="faq" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-head">
-          <span class="kicker">FAQ</span>
-          <h2 id="faq-title">For the person booking the room.</h2>
-        </div>
-
+        <div class="section-head"><span class="kicker">FAQ</span><h2 id="faq-title">For the person booking the room.</h2></div>
         <div class="grid">
-          <details>
-            <summary>What kind of events are the best fit?</summary>
-            <p>Fintech conferences, AI and innovation events, entrepreneurship summits, universities, corporate transformation programs, founder communities, and organizations focused on economic mobility or future-readiness.</p>
-          </details>
-
-          <details>
-            <summary>Can the keynote be customized?</summary>
-            <p>Yes. The core message can be tailored to your audience, industry, event theme, and desired outcome. Add a pre-event briefing call to align on tone, examples, and audience priorities.</p>
-          </details>
-
-          <details>
-            <summary>Do you offer workshops or panels?</summary>
-            <p>Yes. This page supports keynotes, fireside chats, panel appearances, workshops, and executive sessions. Use the booking form to describe the format.</p>
-          </details>
-
-          <details>
-            <summary>Where should pricing go?</summary>
-            <p>If you publish pricing, add a simple “Speaking fees start at [amount]” line near the booking form. If fees vary by travel, format, and audience size, keep the CTA inquiry-based.</p>
-          </details>
-
-          <details>
-            <summary>What proof should be added before launch?</summary>
-            <p>Add real event logos, speaker reel footage, audience photos, organizer testimonials, press mentions, podcast appearances, and specific audience feedback. Do not use fake logos or invented testimonials.</p>
-          </details>
-
-          <details>
-            <summary>What happens after someone submits the form?</summary>
-            <p>Replace the placeholder action with your booking workflow. Ideally, the visitor should receive a confirmation message and you should get their event details in your CRM or inbox.</p>
-          </details>
+          <details><summary>What kind of events are the best fit?</summary><p>Fintech conferences, AI and innovation events, entrepreneurship summits, universities, corporate transformation programs, founder communities, and organizations focused on economic mobility or future-readiness.</p></details>
+          <details><summary>Can the keynote be customized?</summary><p>Yes. The core message can be tailored to your audience, industry, event theme, and desired outcome. Add a pre-event briefing call to align on tone, examples, and audience priorities.</p></details>
+          <details><summary>Do you offer workshops or panels?</summary><p>Yes. This page supports keynotes, fireside chats, panel appearances, workshops, and executive sessions. Use the booking form to describe the format.</p></details>
+          <details><summary>Where should pricing go?</summary><p>If you publish pricing, add a simple “Speaking fees start at [amount]” line near the booking form. If fees vary by travel, format, and audience size, keep the CTA inquiry-based.</p></details>
+          <details><summary>What proof should be added before launch?</summary><p>Add real event logos, speaker reel footage, audience photos, organizer testimonials, press mentions, podcast appearances, and specific audience feedback. Do not use fake logos or invented testimonials.</p></details>
+          <details><summary>What happens after someone submits the form?</summary><p>Replace the placeholder action with your booking workflow. Ideally, the visitor should receive a confirmation message and you should get their event details in your CRM or inbox.</p></details>
         </div>
       </div>
     </section>
@@ -934,21 +749,14 @@
         <div class="card magenta">
           <span class="kicker" style="background: var(--lime); color: var(--ink);">Final CTA</span>
           <h2 id="final-title" style="margin-top: 18px;">Ready to wake up the room?</h2>
-          <p class="lead" style="color: var(--white);">
-            Book a speaker who can connect ambition, technology, ownership, and execution in a way your audience can feel — then use.
-          </p>
-          <div class="cta-row">
-            <a href="#booking" class="btn">Book Me to Speak</a>
-            <a href="/docs/media-kit.md" class="btn secondary">Request the Speaker Kit</a>
-          </div>
+          <p class="lead" style="color: var(--white);">Book a speaker who can connect ambition, technology, ownership, and execution in a way your audience can feel — then use.</p>
+          <div class="cta-row"><a href="#booking" class="btn">Book Me to Speak</a><a href="/docs/media-kit.md" class="btn secondary">Request the Speaker Kit</a></div>
         </div>
       </div>
     </section>
   </main>
 
-  <div class="floating-cta">
-    <a href="#booking" class="btn full">Book Me to Speak</a>
-  </div>
+  <div class="floating-cta"><a href="#booking" class="btn full">Book Me to Speak</a></div>
 
   <footer class="footer">
     <div class="container footer-inner">
