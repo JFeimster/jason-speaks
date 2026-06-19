@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Future of Fintech & Digital Wealth",
+    "slug": "future-of-fintech-digital-wealth",
+    "shortTitle": "Future of Money",
+    "bestFor": "Fintech conferences, innovation teams, business schools, founder rooms",
+    "promise": "Decode how AI, payments, digital platforms, and financial innovation are changing access, ownership, and wealth-building.",
+    "takeaway": "The audience leaves with clearer language for the future of money and a sharper lens for opportunity.",
+    "format": ["Keynote", "Fireside chat", "Workshop"]
+  },
+  {
+    "title": "The Hustler’s Operating System",
+    "slug": "hustlers-operating-system",
+    "shortTitle": "Execution OS",
+    "bestFor": "Entrepreneurs, students, creators, sales teams, operators",
+    "promise": "A tactical mindset keynote on discipline, resilience, execution, and building momentum when the odds were not designed in your favor.",
+    "takeaway": "The audience gets a practical operating system for moving from pressure to progress.",
+    "format": ["Keynote", "Workshop"]
+  },
+  {
+    "title": "AI, Automation & the New Economy",
+    "slug": "ai-automation-new-economy",
+    "shortTitle": "AI Leverage",
+    "bestFor": "Corporate innovation teams, founders, agencies, universities, professional associations",
+    "promise": "Show how professionals and businesses can adapt their skills, workflows, and mindset before technology turns comfort into risk.",
+    "takeaway": "The audience understands how to become operators of AI leverage instead of casualties of automation.",
+    "format": ["Keynote", "Workshop", "Executive session"]
+  },
+  {
+    "title": "Money, Power & Ownership",
+    "slug": "money-power-ownership",
+    "shortTitle": "Ownership",
+    "bestFor": "Financial literacy events, business schools, founder communities, economic mobility orgs",
+    "promise": "A practical, inspirational talk on wealth psychology, capital access, and why ownership is the real flex in the new economy.",
+    "takeaway": "The audience reframes money from status symbol to operating system.",
+    "format": ["Keynote", "Panel", "Workshop"]
+  },
+  {
+    "title": "Reinvention in Real Time",
+    "slug": "reinvention-in-real-time",
+    "shortTitle": "Reinvention",
+    "bestFor": "Career events, veteran entrepreneur groups, founders, creators, teams in transition",
+    "promise": "Show how to evolve your skills, brand, network, and business model while the world keeps moving underneath your feet.",
+    "takeaway": "The audience sees reinvention as a repeatable system instead of a panic button.",
+    "format": ["Keynote", "Fireside chat"]
+  },
+  {
+    "title": "From Survival Mode to Strategy Mode",
+    "slug": "survival-mode-to-strategy-mode",
+    "shortTitle": "Strategy Mode",
+    "bestFor": "Economic mobility orgs, universities, veteran groups, entrepreneurs, community events",
+    "promise": "Turn pressure, uncertainty, and ambition into focused action without waiting for perfect timing or permission.",
+    "takeaway": "The audience leaves with the next-move mindset and a better filter for opportunity.",
+    "format": ["Keynote", "Workshop"]
+  }
+]
