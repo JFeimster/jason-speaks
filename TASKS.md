@@ -1,23 +1,71 @@
 # Concurrent Improvement Tasks for Jason Speaks Landing Page
 
-These tasks are designed to be independent and can be executed concurrently using Jules CLI to improve the codebase without causing merge conflicts.
+These tasks are designed to be independent and safe to run in parallel with Jules/Codex without creating avoidable merge conflicts.
 
-## 1. Extract CSS to a separate file
-**Description:** Move the large `<style>` block from `index.html` into `css/styles.css` and link it in the HTML header.
-**Why:** Improves maintainability and page load performance by enabling browser caching.
+The site must remain static and Vercel-friendly. Do not convert it to React, Next.js, Astro, Tailwind, or any other framework. Do not invent testimonials, logos, awards, client names, audience counts, press mentions, or speaking credentials.
 
-## 2. Extract JavaScript to a separate file
-**Description:** Move the `<script>` block at the bottom of `index.html` into `js/main.js` and link it at the end of the HTML body.
-**Why:** Keeps the HTML clean and makes the JavaScript easier to maintain and test.
+## 1. Extract CSS to `css/styles.css`
 
-## 3. Implement a real contact form endpoint
-**Description:** Replace the placeholder booking form action in `index.html` with a functional endpoint (e.g., Formspree or Netlify Forms integration) so that form submissions actually work out of the box.
-**Why:** Enables the landing page to actually receive booking inquiries without requiring a complex backend setup.
+**Description:** Move the large inline `<style>` block from `index.html` into `css/styles.css`, then link the stylesheet from the document head.
 
-## 4. Add a responsive navigation menu
-**Description:** Update the navigation in `index.html` and its styles to include a hamburger menu toggle for mobile users, since current navigation links are hidden on small screens.
-**Why:** Improves accessibility and user experience on mobile devices.
+**Why:** Improves maintainability, keeps `index.html` readable, and allows browser caching.
 
-## 5. Add Open Graph / Social sharing image placeholders
-**Description:** Create a placeholder image at `assets/images/og-image.jpg` as referenced in `index.html` so that social sharing works correctly right out of the box.
-**Why:** Ensures the site looks professional when shared on social media like Twitter and LinkedIn.
+**Acceptance criteria:**
+
+- `index.html` no longer contains the large inline `<style>` block.
+- `index.html` includes `<link rel="stylesheet" href="/css/styles.css" />`.
+- The visual design remains unchanged after extraction.
+- Existing generated image references remain intact.
+
+## 2. Extract JavaScript to `js/main.js`
+
+**Description:** Move the inline `<script>` block near the bottom of `index.html` into `js/main.js`, then load it with a deferred script tag.
+
+**Why:** Keeps behavior separate from markup and makes future interaction updates easier.
+
+**Acceptance criteria:**
+
+- `index.html` no longer contains inline page-behavior JavaScript.
+- `index.html` includes `<script src="/js/main.js" defer></script>` before `</body>`.
+- Smooth scrolling, year injection, and form/interactivity behavior still work.
+
+## 3. Replace fake booking form behavior with a real inquiry path
+
+**Description:** Replace the placeholder booking form flow with a working static-friendly inquiry path. Use a `mailto:` fallback unless a real form endpoint is provided in the repo or project notes.
+
+**Why:** A fake form creates a false conversion path. A working mailto/booking link is better than a dead form until a real CRM or form processor is selected.
+
+**Acceptance criteria:**
+
+- No fake “message sent” behavior unless a real endpoint exists.
+- Booking CTAs route to a real email, documented placeholder, or clearly marked configurable endpoint.
+- The implementation stays static and Vercel-friendly.
+- No third-party endpoint is invented or hardcoded without a real configured value.
+
+## 4. Add a responsive mobile navigation toggle
+
+**Description:** Add a small hamburger/menu toggle for mobile users while preserving the current desktop nav design.
+
+**Why:** Current desktop navigation works, but mobile users need a clear way to access key sections beyond the sticky CTA.
+
+**Acceptance criteria:**
+
+- Mobile nav can be opened and closed with a button.
+- Toggle has accessible labels/ARIA state.
+- Menu links close the menu after selection.
+- Desktop nav behavior is unchanged.
+- Reduced-motion preferences remain respected.
+
+## 5. Add image performance and asset validation polish
+
+**Description:** Audit the generated root images now used by the page and add practical performance polish where possible.
+
+**Why:** The page now uses generated PNG/JPG assets instead of SVG templates. They need reliable sizing, alt text, loading hints, and documentation so future changes do not regress back to templates.
+
+**Acceptance criteria:**
+
+- Live image references point to generated root assets, not `/assets/images/templates/*.svg`.
+- Important above-the-fold images use appropriate eager loading/fetch priority.
+- Lower-page images use lazy loading where appropriate.
+- Images include useful alt text.
+- `assets/images/README.md` remains aligned with the actual live usage.
