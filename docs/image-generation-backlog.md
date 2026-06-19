@@ -16,8 +16,8 @@ Neobrutalist × Futurist Fintech × Cyberpunk Hustler visual identity. Bold, hig
 
 ### 1. `assets/images/hero-speaker-placeholder.svg`
 
-Recommended output: SVG or PNG  
-Recommended size: 1600×2000 vertical portrait or 1200×1500  
+Recommended output: SVG or PNG
+Recommended size: 1600×2000 vertical portrait or 1200×1500
 Use: Hero speaker visual
 
 Create a vertical hero portrait illustration of a confident future-of-money speaker standing on a stage, facing an unseen audience, with dramatic cyberpunk fintech lighting. The speaker should feel executive, inspirational, battle-tested, and entrepreneurial — a modern founder/speaker energy, not a corporate stock-photo consultant. Surround the figure with abstract fintech dashboard elements, payment rails, AI interface fragments, market graph shapes, digital wealth symbols, and glowing geometric UI panels.
@@ -34,8 +34,8 @@ Stylized hero image of Jason Feimster speaking on fintech, AI, ownership, and th
 
 ### 2. `assets/images/audience-photo-placeholder.svg`
 
-Recommended output: SVG or JPG  
-Recommended size: 1600×1000 or 1200×800  
+Recommended output: SVG or JPG
+Recommended size: 1600×1000 or 1200×800
 Use: Audience / event energy visual
 
 Create a wide cinematic audience scene at a future-focused business, fintech, or entrepreneurship event. Show an energized diverse audience watching a speaker on stage, with laptops, notebooks, subtle phone glow, and futuristic stage lighting. The room should feel like a premium fintech conference mixed with underground founder energy — polished but not boring.
@@ -52,8 +52,8 @@ Stylized audience scene at a high-energy fintech, AI, and entrepreneurship keyno
 
 ### 3. `assets/images/og-image.jpg`
 
-Recommended output: JPG  
-Recommended size: 1200×630  
+Recommended output: JPG
+Recommended size: 1200×630
 Use: Open Graph / social share image
 
 Create a bold Open Graph social preview image for a speaker landing page. The image should communicate future-of-money keynote energy: fintech, AI, digital wealth, ownership, entrepreneurship, execution, and reinvention. Use an abstract speaker silhouette or confident stage figure, surrounded by cyberpunk dashboard UI cards, financial graph shapes, payment rails, AI prompt fragments, and electric geometric accents.
@@ -70,8 +70,8 @@ Social preview image for Jason Feimster’s future-of-money speaker profile.
 
 ### 4. `assets/images/speaker-reel-thumbnail.svg`
 
-Recommended output: JPG or PNG first, SVG only if using vector illustration  
-Recommended size: 1280×720  
+Recommended output: JPG or PNG first, SVG only if using vector illustration
+Recommended size: 1280×720
 Use: Speaker reel section / video placeholder
 
 Create a cinematic speaker reel thumbnail showing a bold keynote moment. A confident speaker is on stage under dramatic cyberpunk fintech lighting, with an audience implied in the foreground. Add visual energy through abstract motion streaks, dashboard UI panels, glitch fragments, money/AI/ownership symbolism, and stage lights.
@@ -90,7 +90,7 @@ Add a simple abstract play-button shape in the center using electric lime with a
 
 ### 5. `assets/images/founder-story-portrait.jpg`
 
-Use: Speaker story / belief section  
+Use: Speaker story / belief section
 Recommended size: 1200×1600
 
 Create a cinematic founder-speaker portrait of a resilient entrepreneur and veteran-coded operator standing in a dark fintech command-center environment. The subject should feel focused, strategic, battle-tested, and future-facing. Background includes abstract dashboards, AI workflow panels, digital money rails, and neon reflections.
@@ -103,7 +103,7 @@ Aspect ratio: 3:4 vertical.
 
 ### 6. `assets/images/keynote-topics-dashboard.jpg`
 
-Use: Signature topics section visual  
+Use: Signature topics section visual
 Recommended size: 1600×1000
 
 Create an abstract fintech keynote topics dashboard with six bold visual modules representing: future of fintech and digital wealth, the hustler’s operating system, AI and automation, money power and ownership, reinvention, and survival mode to strategy mode. Each module should look like a brutalist UI card with icons, graphs, geometric shapes, and futuristic dashboard accents.
@@ -116,7 +116,7 @@ Aspect ratio: 16:10 landscape.
 
 ### 7. `assets/images/fintech-command-center.jpg`
 
-Use: Mechanism section / “stage energy meets fintech command center”  
+Use: Mechanism section / “stage energy meets fintech command center”
 Recommended size: 1600×900
 
 Create a futuristic fintech command center visual: large screens, abstract market signals, AI automation panels, payment rails, digital wallet shapes, and ownership/equity symbolism. The scene should feel like a strategic operating room for the new economy.
@@ -129,7 +129,7 @@ Aspect ratio: 16:9.
 
 ### 8. `assets/images/media-kit-preview.jpg`
 
-Use: Media kit section  
+Use: Media kit section
 Recommended size: 1400×1000
 
 Create a stylized speaker media kit preview laid out as a stack of bold documents, one-sheet pages, headshot cards, keynote topic cards, and booking info cards on a brutalist desk. Add cyberpunk fintech UI accents, neon sticky-note shapes, abstract QR-like blocks, and dashboard fragments.
@@ -142,7 +142,7 @@ Aspect ratio: 7:5 landscape.
 
 ### 9. `assets/images/booking-cta-energy.jpg`
 
-Use: Booking CTA / final section background  
+Use: Booking CTA / final section background
 Recommended size: 1600×900
 
 Create an energetic final booking CTA image showing a stage spotlight, electric neon geometric burst, abstract microphone silhouette, fintech dashboard cards, and audience energy waves. The image should feel like the moment before a keynote starts — urgent, premium, and memorable.
@@ -155,7 +155,7 @@ Aspect ratio: 16:9.
 
 ### 10. `assets/images/mobile-social-card.jpg`
 
-Use: Instagram/LinkedIn post preview, optional social asset  
+Use: Instagram/LinkedIn post preview, optional social asset
 Recommended size: 1080×1350
 
 Create a vertical social media promo image for a future-of-money speaker. Feature an abstract stage figure, cyberpunk fintech dashboards, AI automation shapes, digital wealth symbols, and bold brutalist design blocks. It should feel like a punchy event promo asset without any actual text.
@@ -168,7 +168,7 @@ Aspect ratio: 4:5 vertical, 1080×1350.
 
 ### 11. `assets/images/linkedin-banner.jpg`
 
-Use: LinkedIn profile/banner or repo branding  
+Use: LinkedIn profile/banner or repo branding
 Recommended size: 1584×396
 
 Create a wide LinkedIn banner image for a speaker focused on fintech, AI, ownership, execution, entrepreneurship, digital wealth, and reinvention. Use a panoramic cyberpunk fintech command-center scene with stage lights, dashboard UI panels, abstract money rails, AI interface fragments, and bold geometric accents.
@@ -181,7 +181,7 @@ Aspect ratio: LinkedIn banner, 1584×396.
 
 ### 12. `assets/images/event-organizer-preview.jpg`
 
-Use: Audience-fit section / event organizers  
+Use: Audience-fit section / event organizers
 Recommended size: 1600×1000
 
 Create a premium event organizer planning scene: a laptop showing abstract speaker booking dashboard cards, event schedule blocks, stage layout shapes, audience profile cards, and media kit assets spread across a desk. The vibe should feel organized, executive, and high-energy.
@@ -194,7 +194,7 @@ Aspect ratio: 16:10 landscape.
 
 ### 13. `assets/images/startup-founder-audience.jpg`
 
-Use: Startup/founder audience card  
+Use: Startup/founder audience card
 Recommended size: 1600×1000
 
 Create a high-energy scene of startup founders, creators, and operators in a modern event space watching a future-focused speaker. The audience should feel ambitious, diverse, intense, and inspired — laptops open, notebooks out, heads up, room charged.
@@ -207,7 +207,7 @@ Aspect ratio: 16:10 landscape.
 
 ### 14. `assets/images/university-business-school-audience.jpg`
 
-Use: Universities / business schools audience card  
+Use: Universities / business schools audience card
 Recommended size: 1600×1000
 
 Create a future-facing university or business school audience scene with students and young professionals engaged in a keynote about AI, money, ownership, entrepreneurship, and the new economy. The room should feel aspirational, modern, and urgent — less classroom lecture, more economic mobility activation.
@@ -220,7 +220,7 @@ Aspect ratio: 16:10 landscape.
 
 ### 15. `assets/images/corporate-innovation-session.jpg`
 
-Use: Corporate transformation audience card  
+Use: Corporate transformation audience card
 Recommended size: 1600×1000
 
 Create a corporate innovation session scene with executives and teams gathered around a futuristic AI and fintech strategy dashboard. The mood should feel high-stakes, practical, and energizing — not boring boardroom stock photography.
