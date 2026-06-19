@@ -83,8 +83,8 @@ Generate these later if you want deeper polish.
 
 ### 1. `assets/images/founder-story-portrait.jpg`
 
-**Use:** Founder / speaker story section  
-**Recommended size:** `1200×1600`  
+**Use:** Founder / speaker story section
+**Recommended size:** `1200×1600`
 **Format:** JPG
 
 ```txt
@@ -99,8 +99,8 @@ Aspect ratio: 3:4 vertical.
 
 ### 2. `assets/images/fintech-command-center.jpg`
 
-**Use:** Mechanism section / “stage energy meets fintech command center”  
-**Recommended size:** `1600×900`  
+**Use:** Mechanism section / “stage energy meets fintech command center”
+**Recommended size:** `1600×900`
 **Format:** JPG
 
 ```txt
@@ -115,8 +115,8 @@ Aspect ratio: 16:9.
 
 ### 3. `assets/images/media-kit-preview.jpg`
 
-**Use:** Media kit section  
-**Recommended size:** `1400×1000`  
+**Use:** Media kit section
+**Recommended size:** `1400×1000`
 **Format:** JPG
 
 ```txt
@@ -131,8 +131,8 @@ Aspect ratio: 7:5 landscape.
 
 ### 4. `assets/images/booking-cta-energy.jpg`
 
-**Use:** Booking CTA / final section background  
-**Recommended size:** `1600×900`  
+**Use:** Booking CTA / final section background
+**Recommended size:** `1600×900`
 **Format:** JPG
 
 ```txt
