@@ -106,22 +106,22 @@
     .btn.full { width: 100%; }
     .nav-cta { white-space: nowrap; }
 
-    .hero { min-height: calc(100vh - 72px); padding: clamp(18px, 2.7vw, 34px) 0 clamp(16px, 2.4vw, 30px); display: grid; align-items: center; position: relative; }
-    .hero-grid { display: grid; gap: clamp(22px, 3vw, 40px); align-items: center; }
+    .hero { min-height: calc(100vh - 72px); padding: clamp(14px, 2vw, 26px) 0 clamp(14px, 2vw, 26px); display: grid; align-items: start; position: relative; }
+    .hero-grid { display: grid; gap: clamp(22px, 3vw, 42px); align-items: start; }
     .eyebrow, .kicker { width: fit-content; border: var(--border); border-radius: 999px; padding: 7px 12px; font-weight: 1000; text-transform: uppercase; box-shadow: var(--shadow-small); }
     .eyebrow { display: inline-flex; align-items: center; gap: 10px; background: var(--magenta); color: var(--white); transform: rotate(-1deg); margin-bottom: 12px; }
     .kicker { background: var(--yellow); }
     .hero h1, h2 { margin: 0; line-height: 0.92; letter-spacing: -0.083em; text-transform: uppercase; }
-    .hero h1 { font-size: clamp(2.35rem, 4.75vw, 4.55rem); max-width: 720px; }
+    .hero h1 { font-size: clamp(2.25rem, 4.25vw, 4.15rem); max-width: 690px; }
     h2 { font-size: clamp(2.25rem, 6.5vw, 5.25rem); max-width: 940px; }
     .glitch { position: relative; display: inline-block; text-shadow: 4px 4px 0 var(--cyan), -4px -4px 0 var(--magenta); }
-    .hero-copy { margin: 14px 0 0; font-size: clamp(1rem, 1.32vw, 1.14rem); max-width: 680px; font-weight: 800; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 18px; }
-    .trust-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .hero-copy { margin: 13px 0 0; font-size: clamp(1rem, 1.28vw, 1.12rem); max-width: 670px; font-weight: 800; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 16px; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 13px; }
     .chip { background: var(--white); border: 3px solid var(--ink); border-radius: 999px; padding: 7px 11px; font-weight: 900; font-size: 0.8rem; text-transform: uppercase; }
 
-    .hero-visual { width: min(100%, 540px); justify-self: end; border: var(--border); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); padding: 14px; transform: rotate(1deg); overflow: hidden; }
-    .hero-visual img { width: 100%; aspect-ratio: 5 / 4; max-height: min(47vh, 420px); object-fit: cover; object-position: 50% 28%; border: 3px solid var(--white); border-radius: 16px; background: var(--ink); }
+    .hero-visual { width: min(100%, 430px); justify-self: end; border: var(--border); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); padding: 14px; transform: rotate(1deg); overflow: hidden; }
+    .hero-visual img { width: 100%; aspect-ratio: 4 / 5; max-height: min(58vh, 520px); object-fit: cover; object-position: 50% 26%; border: 3px solid var(--white); border-radius: 16px; background: var(--ink); }
     .hero-visual-caption { margin: 10px 4px 0; font-weight: 1000; text-transform: uppercase; font-size: 0.78rem; color: var(--white); }
 
     .ticker { border-top: var(--border); border-bottom: var(--border); background: var(--cyan); overflow: hidden; white-space: nowrap; font-weight: 1000; text-transform: uppercase; font-size: clamp(1.05rem, 3vw, 1.5rem); }
@@ -148,6 +148,10 @@
     .stat span { font-weight: 900; text-transform: uppercase; }
     .logo-grid { display: grid; gap: 18px; }
     .proof-label { min-height: 92px; display: grid; place-items: center; text-align: center; border: 3px dashed var(--ink); border-radius: 18px; padding: 18px; background: var(--paper); font-weight: 1000; text-transform: uppercase; }
+    .reel-card { position: relative; display: block; overflow: hidden; border: var(--border); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); padding: 12px; }
+    .reel-card img { width: 100%; aspect-ratio: 16 / 10; max-height: 390px; object-fit: cover; object-position: center; border: 3px solid var(--white); border-radius: 16px; background: var(--ink); }
+    .reel-card .play-mark { position: absolute; top: 28px; left: 28px; width: 82px; height: 82px; display: grid; place-items: center; border: 4px solid var(--white); border-radius: 999px; background: var(--lime); color: var(--ink); box-shadow: 7px 7px 0 var(--magenta); font-size: 2.1rem; margin: 0; }
+    .reel-caption { margin: 12px 4px 0; font-weight: 1000; text-transform: uppercase; font-size: 0.84rem; color: var(--white); }
     .video-placeholder { min-height: 300px; display: grid; place-items: center; text-align: center; border: var(--border); border-radius: 18px; background: linear-gradient(135deg, var(--ink), #161616); color: var(--white); box-shadow: var(--shadow); padding: 24px; }
     .play-mark { width: 92px; height: 92px; display: grid; place-items: center; border: 4px solid var(--white); border-radius: 999px; background: var(--lime); color: var(--ink); box-shadow: 7px 7px 0 var(--magenta); font-size: 2.4rem; margin-bottom: 18px; }
     .comparison { overflow-x: auto; border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--white); }
@@ -161,6 +165,7 @@
     textarea { min-height: 130px; resize: vertical; }
     .form-note { font-weight: 800; font-size: 0.9rem; }
     details { border: var(--border); border-radius: 18px; background: var(--white); padding: 18px; box-shadow: var(--shadow-small); }
+    .nav-more { border: 0; border-radius: 0; background: transparent; padding: 0; box-shadow: none; }
     summary { cursor: pointer; font-weight: 1000; text-transform: uppercase; }
     details p { font-weight: 700; }
     .floating-cta { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 30; }
@@ -170,7 +175,7 @@
     @keyframes popIn { from { opacity: 0; transform: translateY(18px) rotate(-1deg); } to { opacity: 1; transform: translateY(0) rotate(0deg); } }
 
     @media (min-width: 760px) {
-      .hero-grid { grid-template-columns: minmax(0, 0.96fr) minmax(360px, 0.86fr); }
+      .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(320px, 0.66fr); }
       .grid-2 { grid-template-columns: 1fr 0.9fr; align-items: center; }
       .grid-3 { grid-template-columns: repeat(3, 1fr); }
       .stat-strip, .logo-grid { grid-template-columns: repeat(3, 1fr); }
@@ -198,8 +203,8 @@
       .brand-text { max-width: 170px; white-space: normal; }
       .nav-cta { display: none; }
       .hero { padding-top: 28px; }
-      .hero h1 { font-size: clamp(2.45rem, 12vw, 4rem); }
-      .hero-visual img { max-height: 280px; }
+      .hero h1 { font-size: clamp(2.35rem, 11vw, 3.85rem); }
+      .hero-visual img { max-height: 360px; }
       .btn { width: 100%; }
       section { padding: 56px 0; }
     }
@@ -263,7 +268,7 @@
 
         <aside class="hero-visual reveal" aria-label="Speaker hero image">
           <img src="/assets/images/hero-speaker-placeholder.png" width="1122" height="1402" alt="Stylized cyberpunk illustration of Jason Feimster speaking with fintech and AI dashboards behind him." />
-          <p class="hero-visual-caption">Future-of-money speaker image — 5:4 header crop.</p>
+          <p class="hero-visual-caption">Future-of-money speaker image — portrait header crop.</p>
         </aside>
       </div>
     </section>
@@ -305,7 +310,7 @@
 
     <section aria-labelledby="mechanism-title"><div class="container"><div class="section-head"><span class="kicker">The mechanism</span><h2 id="mechanism-title">Stage energy meets fintech command center.</h2><p class="lead">The core method: translate complex shifts in money, AI, culture, and work into simple mental models people can use immediately.</p></div><div class="grid-3 process"><div class="card"><h3>Decode the shift</h3><p>Make the invisible forces visible: automation, digital wealth, new career leverage, ownership, and the speed of change.</p></div><div class="card cyan"><h3>Challenge the default</h3><p>Break the passive scripts that keep people waiting: permission, perfect timing, institutional validation, and outdated money beliefs.</p></div><div class="card alt"><h3>Activate the room</h3><p>Give people a clear next move: learn the tools, build the skill stack, own the asset, make the ask, and execute with urgency.</p></div></div></div></section>
 
-    <section id="reel" aria-labelledby="reel-title"><div class="container grid-2"><div class="video-placeholder"><div><div class="play-mark">▶</div><h3>Speaker reel placeholder</h3><p>Add a verified reel embed or video thumbnail here when ready. Until then, this stays functional and does not break layout.</p></div></div><div class="section-head"><span class="kicker">Watch the room move</span><h2 id="reel-title">Not motivation. Activation.</h2><p class="lead">The speaker reel should prove three things fast: the message is sharp, the delivery has presence, and the audience leaves with energy they can use.</p><div class="cta-row"><a href="/booking.html" class="btn">Request Availability</a><a href="/media-kit.html" class="btn secondary">Download Media Kit</a></div></div></div></section>
+    <section id="reel" aria-labelledby="reel-title"><div class="container grid-2"><a class="reel-card" href="/booking.html" aria-label="Speaker reel preview. Request availability until a verified reel is embedded."><img src="/assets/images/audience-photo-placeholder.png" width="1600" height="960" alt="Cinematic audience watching a future-focused fintech and entrepreneurship keynote." /><span class="play-mark">▶</span><p class="reel-caption">Speaker reel preview image — audience energy.</p></a><div class="section-head"><span class="kicker">Watch the room move</span><h2 id="reel-title">Not motivation. Activation.</h2><p class="lead">The speaker reel should prove three things fast: the message is sharp, the delivery has presence, and the audience leaves with energy they can use.</p><div class="cta-row"><a href="/booking.html" class="btn">Request Availability</a><a href="/media-kit.html" class="btn secondary">Download Media Kit</a></div></div></div></section>
 
     <section aria-labelledby="audiences-title"><div class="container"><div class="section-head"><span class="kicker">Built for</span><h2 id="audiences-title">Rooms full of people who refuse to get left behind.</h2></div><div class="grid-3"><div class="card"><h3>Fintech & innovation conferences</h3><p>For audiences tracking payments, AI, financial access, digital assets, wealth tech, and the future of economic opportunity.</p></div><div class="card cyan"><h3>Corporate transformation teams</h3><p>For organizations that need their people energized around change, adaptation, execution, and future-readiness.</p></div><div class="card alt"><h3>Universities & business schools</h3><p>For students and early-career professionals navigating career pressure, economic mobility, and the AI-shaped workforce.</p></div><div class="card magenta"><h3>Startup ecosystems</h3><p>For founders, operators, accelerators, and creator communities who need sharper thinking around leverage and ownership.</p></div><div class="card"><h3>Professional associations</h3><p>For members who want practical, inspirational insight on technology, leadership, money, and staying relevant.</p></div><div class="card dark"><h3>Community organizations</h3><p>For rooms focused on empowerment, financial literacy, access, ambition, and helping people move from survival to strategy.</p></div></div></div></section>
 
@@ -319,7 +324,7 @@
 
     <section class="booking" id="booking" aria-labelledby="booking-title"><div class="container grid-2"><div class="section-head"><span class="kicker">Book the keynote</span><h2 id="booking-title">Give your audience the spark, strategy, and future-facing perspective to move differently.</h2><p class="lead">Share your event details and topic interest. This form is designed for conferences, corporate teams, universities, accelerators, associations, and community organizations.</p><div class="card" style="color: var(--ink);"><h3>Best-fit events</h3><p>Keynotes, fireside chats, panels, workshops, leadership offsites, student events, innovation summits, fintech conferences, founder programs, and economic mobility events.</p></div></div><div class="card" style="color: var(--ink);"><form id="bookingForm" action="#" method="post" novalidate><div><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Booker" /></div><div><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@event.com" /></div><div><label for="organization">Organization</label><input id="organization" name="organization" type="text" required placeholder="Conference / Company / University" /></div><div class="grid-2"><div><label for="date">Event date</label><input id="date" name="date" type="date" /></div><div><label for="audience">Audience size</label><select id="audience" name="audience"><option value="">Select one</option><option>Under 100</option><option>100–500</option><option>500–1,500</option><option>1,500+</option><option>Not sure yet</option></select></div></div><div><label for="topic">Topic interest</label><select id="topic" name="topic" required><option value="">Select a keynote theme</option><option>Future of Fintech & Digital Wealth</option><option>The Hustler’s Operating System</option><option>AI, Automation & the New Economy</option><option>Money, Power & Ownership</option><option>Reinvention in Real Time</option><option>From Survival Mode to Strategy Mode</option><option>Custom talk / not sure yet</option></select></div><div><label for="message">Tell me about the event</label><textarea id="message" name="message" placeholder="Event goals, location, audience, budget range, and what you want people to feel or do after the talk."></textarea></div><button class="btn full" type="submit">Request Availability</button><p class="form-note" id="formMessage" aria-live="polite">Placeholder form only. Connect this to your CRM, email platform, or booking workflow before publishing.</p></form></div></div></section>
 
-    <section class="faq" aria-labelledby="faq-title"><div class="container"><div class="section-head"><span class="kicker">FAQ</span><h2 id="faq-title">For the person booking the room.</h2></div><div class="grid"><details><summary>What kind of events are the best fit?</summary><p>Fintech conferences, AI and innovation events, entrepreneurship summits, universities, corporate transformation programs, founder communities, and organizations focused on economic mobility or future-readiness.</p></details><details><summary>Can the keynote be customized?</summary><p>Yes. The core message can be tailored to your audience, industry, event theme, and desired outcome. Add a pre-event briefing call to align on tone, examples, and audience priorities.</p></details><details><summary>Do you offer workshops or panels?</summary><p>Yes. This page supports keynotes, fireside chats, panel appearances, workshops, and executive sessions. Use the booking form to describe the format.</p></details><details><summary>Where should pricing go?</summary><p>If you publish pricing, add a simple “Speaking fees start at [amount]” line near the booking form. If fees vary by travel, format, and audience size, keep the CTA inquiry-based.</p></details><details><summary>What proof should be added before launch?</summary><p>Add real event logos, speaker reel footage, audience photos, organizer testimonials, press mentions, podcast appearances, and specific audience feedback. Do not use fake logos or invented testimonials.</p></details><details><summary>What happens after someone submits the form?</summary><p>Replace the placeholder action with your booking workflow. Ideally, the visitor should receive a confirmation message and you should get their event details in your CRM or inbox.</p></details></div></div></section>
+    <section class="faq" aria-labelledby="faq-title"><div class="container"><div class="section-head"><span class="kicker">FAQ</span><h2 id="faq-title">For the person booking the room.</h2></div><div class="grid"><details><summary>What kind of events are the best fit?</summary><p>Fintech conferences, AI and innovation events, entrepreneurship summits, universities, corporate transformation programs, founder communities, and organizations focused on economic mobility or future-readiness.</p></details><details><summary>Can the keynote be customized?</summary><p>Yes. The core message can be tailored to your audience, industry, event theme, and desired outcome. Add a pre-event briefing call to align on tone, examples, and audience priorities.</p></details><details><summary>Do you offer workshops or panels?</summary><p>Yes. This page supports keynotes, fireside chats, panels appearances, workshops, and executive sessions. Use the booking form to describe the format.</p></details><details><summary>Where should pricing go?</summary><p>If you publish pricing, add a simple “Speaking fees start at [amount]” line near the booking form. If fees vary by travel, format, and audience size, keep the CTA inquiry-based.</p></details><details><summary>What proof should be added before launch?</summary><p>Add real event logos, speaker reel footage, audience photos, organizer testimonials, press mentions, podcast appearances, and specific audience feedback. Do not use fake logos or invented testimonials.</p></details><details><summary>What happens after someone submits the form?</summary><p>Replace the placeholder action with your booking workflow. Ideally, the visitor should receive a confirmation message and you should get their event details in your CRM or inbox.</p></details></div></div></section>
 
     <section aria-labelledby="final-title"><div class="container"><div class="card magenta"><span class="kicker" style="background: var(--lime); color: var(--ink);">Final CTA</span><h2 id="final-title" style="margin-top: 18px;">Ready to wake up the room?</h2><p class="lead" style="color: var(--white);">Book a speaker who can connect ambition, technology, ownership, and execution in a way your audience can feel — then use.</p><div class="cta-row"><a href="/booking.html" class="btn">Book Me to Speak</a><a href="/media-kit.html" class="btn secondary">Request the Speaker Kit</a></div></div></div></section>
   </main>
@@ -335,7 +340,7 @@
     var message = document.getElementById('formMessage');
     form.addEventListener('submit', function(event) { event.preventDefault(); if (!form.checkValidity()) { message.textContent = 'Please complete the required fields: name, email, organization, and topic interest.'; message.style.color = '#b00020'; form.reportValidity(); return; } message.textContent = 'Demo success state: connect this form to your booking workflow before publishing.'; message.style.color = '#050505'; });
     document.getElementById('year').textContent = new Date().getFullYear();
-    if ('IntersectionObserver' in window) { var observer = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('reveal'); observer.unobserve(entry.target); } }); }, { threshold: 0.12 }); document.querySelectorAll('section .card, section .section-head, .hero-visual, .video-placeholder').forEach(function(el) { observer.observe(el); }); }
+    if ('IntersectionObserver' in window) { var observer = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('reveal'); observer.unobserve(entry.target); } }); }, { threshold: 0.12 }); document.querySelectorAll('section .card, section .section-head, .hero-visual, .reel-card').forEach(function(el) { observer.observe(el); }); }
   </script>
 </body>
 </html>
