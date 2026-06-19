@@ -1,0 +1,22 @@
+{
+  "name": "Jason Feimster Speaker Media Kit",
+  "status": "scaffold",
+  "safeProofPolicy": "Use verified assets only. Do not invent logos, testimonials, awards, audience numbers, event history, or media mentions.",
+  "sections": [
+    "Short bio",
+    "Long bio",
+    "Approved topics",
+    "Speaker intro",
+    "Headshots",
+    "Stage photos",
+    "AV requirements",
+    "Booking process",
+    "Contact details",
+    "Verified proof assets"
+  ],
+  "downloads": [
+    { "label": "Media kit page", "href": "/media-kit" },
+    { "label": "Booking info doc", "href": "/docs/booking-info.md" },
+    { "label": "Brand notes doc", "href": "/docs/brand-notes.md" }
+  ]
+}
