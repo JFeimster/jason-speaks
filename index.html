@@ -97,25 +97,23 @@
     .btn.dark { background: var(--ink); color: var(--white); box-shadow: 6px 6px 0 var(--magenta); }
     .btn.full { width: 100%; }
 
-    .hero { padding: clamp(46px, 8vw, 96px) 0 clamp(36px, 6vw, 72px); position: relative; }
-    .hero-grid { display: grid; gap: clamp(24px, 4vw, 42px); align-items: center; }
+    .hero { padding: clamp(28px, 5vw, 54px) 0 clamp(30px, 5vw, 58px); position: relative; }
+    .hero-grid { display: grid; gap: clamp(20px, 3.2vw, 38px); align-items: center; }
     .eyebrow, .kicker { width: fit-content; border: var(--border); border-radius: 999px; padding: 7px 12px; font-weight: 1000; text-transform: uppercase; box-shadow: var(--shadow-small); }
-    .eyebrow { display: inline-flex; align-items: center; gap: 10px; background: var(--magenta); color: var(--white); transform: rotate(-1deg); margin-bottom: 18px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; background: var(--magenta); color: var(--white); transform: rotate(-1deg); margin-bottom: 14px; }
     .kicker { background: var(--yellow); }
-    .hero h1, h2 { margin: 0; line-height: 0.9; letter-spacing: -0.085em; text-transform: uppercase; }
-    .hero h1 { font-size: clamp(3.2rem, 9vw, 7.5rem); max-width: 980px; }
+    .hero h1, h2 { margin: 0; line-height: 0.88; letter-spacing: -0.085em; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2.75rem, 7.4vw, 6.15rem); max-width: 720px; }
     h2 { font-size: clamp(2.25rem, 6.5vw, 5.25rem); max-width: 940px; }
     .glitch { position: relative; display: inline-block; text-shadow: 4px 4px 0 var(--cyan), -4px -4px 0 var(--magenta); }
-    .hero-copy { margin: 22px 0 0; font-size: clamp(1.08rem, 2vw, 1.35rem); max-width: 760px; font-weight: 750; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
-    .trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-    .chip { background: var(--white); border: 3px solid var(--ink); border-radius: 999px; padding: 8px 12px; font-weight: 900; font-size: 0.86rem; text-transform: uppercase; }
+    .hero-copy { margin: 16px 0 0; font-size: clamp(1rem, 1.65vw, 1.22rem); max-width: 680px; font-weight: 750; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .chip { background: var(--white); border: 3px solid var(--ink); border-radius: 999px; padding: 7px 11px; font-weight: 900; font-size: 0.82rem; text-transform: uppercase; }
 
-    .hero-panel { border: var(--border); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); padding: clamp(20px, 3vw, 32px); transform: rotate(1deg); }
-    .panel-grid { display: grid; gap: 14px; }
-    .signal { border: 3px solid var(--white); border-radius: 18px; padding: 18px; background: linear-gradient(135deg, var(--lime), var(--cyan)); color: var(--ink); font-weight: 1000; text-transform: uppercase; box-shadow: 6px 6px 0 var(--magenta); }
-    .signal.dark { background: var(--ink); color: var(--white); box-shadow: 6px 6px 0 var(--lime); }
-    .mini-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 14px; }
+    .hero-visual { width: min(100%, 460px); justify-self: end; border: var(--border); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); padding: 12px; transform: rotate(1deg); overflow: hidden; }
+    .hero-visual img { width: 100%; aspect-ratio: 16 / 10; max-height: min(36vh, 360px); object-fit: cover; object-position: center; border: 3px solid var(--white); border-radius: 16px; background: var(--ink); }
+    .hero-visual-caption { margin: 10px 4px 0; font-weight: 1000; text-transform: uppercase; font-size: 0.82rem; color: var(--white); }
 
     .ticker { border-top: var(--border); border-bottom: var(--border); background: var(--cyan); overflow: hidden; white-space: nowrap; font-weight: 1000; text-transform: uppercase; font-size: clamp(1.05rem, 3vw, 1.5rem); }
     .ticker-track { display: inline-flex; gap: 30px; padding: 14px 0; animation: ticker 24s linear infinite; }
@@ -163,7 +161,7 @@
     @keyframes popIn { from { opacity: 0; transform: translateY(18px) rotate(-1deg); } to { opacity: 1; transform: translateY(0) rotate(0deg); } }
 
     @media (min-width: 760px) {
-      .hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.72fr); }
+      .hero-grid { grid-template-columns: minmax(0, 0.98fr) minmax(300px, 0.72fr); }
       .grid-2 { grid-template-columns: 1fr 0.9fr; align-items: center; }
       .grid-3 { grid-template-columns: repeat(3, 1fr); }
       .stat-strip, .logo-grid { grid-template-columns: repeat(3, 1fr); }
@@ -179,6 +177,7 @@
       .nav-inner { grid-template-columns: 1fr auto; }
       .nav-links { display: none; }
       .nav .btn { padding-inline: 16px; font-size: 0.86rem; }
+      .hero-visual { justify-self: center; }
     }
 
     @media (max-width: 759px) {
@@ -188,8 +187,9 @@
       .brand-mark { width: 38px; height: 38px; }
       .brand span:last-child { max-width: 170px; }
       .nav .btn { display: none; }
-      .hero { padding-top: 36px; }
-      .hero h1 { font-size: clamp(3rem, 16vw, 4.8rem); }
+      .hero { padding-top: 28px; }
+      .hero h1 { font-size: clamp(2.8rem, 14vw, 4.45rem); }
+      .hero-visual img { max-height: 260px; }
       .btn { width: 100%; }
       section { padding: 56px 0; }
     }
@@ -239,17 +239,9 @@
           </div>
         </div>
 
-        <aside class="hero-panel reveal" aria-label="Speaker positioning snapshot">
-          <div class="panel-grid">
-            <div class="signal">Stage energy</div>
-            <div class="signal dark">Future-of-money strategy</div>
-            <div class="mini-grid">
-              <div class="signal">AI</div>
-              <div class="signal">Fintech</div>
-              <div class="signal dark">Ownership</div>
-              <div class="signal dark">Execution</div>
-            </div>
-          </div>
+        <aside class="hero-visual reveal" aria-label="Speaker hero image">
+          <img src="/assets/images/audience-photo-placeholder.png" width="1600" height="960" alt="High-energy fintech and AI keynote audience watching a speaker on stage." />
+          <p class="hero-visual-caption">Fintech keynote energy — optimized for the header fold.</p>
         </aside>
       </div>
     </section>
@@ -320,7 +312,7 @@
     var message = document.getElementById('formMessage');
     form.addEventListener('submit', function(event) { event.preventDefault(); if (!form.checkValidity()) { message.textContent = 'Please complete the required fields: name, email, organization, and topic interest.'; message.style.color = '#b00020'; form.reportValidity(); return; } message.textContent = 'Demo success state: connect this form to your booking workflow before publishing.'; message.style.color = '#050505'; });
     document.getElementById('year').textContent = new Date().getFullYear();
-    if ('IntersectionObserver' in window) { var observer = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('reveal'); observer.unobserve(entry.target); } }); }, { threshold: 0.12 }); document.querySelectorAll('section .card, section .section-head, .hero-panel, .video-placeholder').forEach(function(el) { observer.observe(el); }); }
+    if ('IntersectionObserver' in window) { var observer = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('reveal'); observer.unobserve(entry.target); } }); }, { threshold: 0.12 }); document.querySelectorAll('section .card, section .section-head, .hero-visual, .video-placeholder').forEach(function(el) { observer.observe(el); }); }
   </script>
 </body>
 </html>
