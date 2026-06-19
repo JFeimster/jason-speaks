@@ -1,6 +1,6 @@
 # Jason Speaks — Asset Generation Prompt Library
 
-This file contains suggested visual assets for the Jason Feimster speaker profile landing page.
+This file contains visual asset prompts and implementation notes for the Jason Feimster speaker profile landing page.
 
 Project style:
 
@@ -28,21 +28,40 @@ Visual rules:
 
 ---
 
+## Current Asset Status
+
+The following assets already exist in the repo and are referenced by `index.html`.
+
+| Status | Asset | Path | Current Use |
+|---|---|---|---|
+| Existing | Favicon / nav mark | `assets/icons/favicon.svg` | Browser favicon and compact nav brand mark |
+| Existing | Hero speaker placeholder | `assets/images/templates/hero-speaker-placeholder.svg` | Hero visual card |
+| Existing | Audience placeholder | `assets/images/templates/audience-photo-placeholder.svg` | Tension / audience energy section |
+| Existing | Speaker reel thumbnail placeholder | `assets/images/templates/speaker-reel-thumbnail.svg` | Reel section visual |
+| Existing | Proof logo placeholder 1 | `assets/logos/placeholders/logo-1.svg` | Honest proof placeholder |
+| Existing | Proof logo placeholder 2 | `assets/logos/placeholders/logo-2.svg` | Honest proof placeholder |
+| Existing | Proof logo placeholder 3 | `assets/logos/placeholders/logo-3.svg` | Honest proof placeholder |
+| Existing | Open Graph image | `assets/images/og-image.jpg` | Social preview image |
+
+These are placeholder assets, not fake proof. Replace them only when real assets are available or when final generated assets are ready.
+
+---
+
 ## Recommended Asset Inventory
 
 | Priority | Asset Type | Suggested File Path | Purpose |
 |---|---|---|---|
 | P0 | Primary speaker logo | `assets/logos/jason-feimster-speaker-logo.svg` | Main brand identity |
 | P0 | Speaker monogram mark | `assets/logos/jf-monogram-mark.svg` | Favicon/social/avatar/compact nav |
-| P0 | Favicon icon set | `assets/icons/favicon.svg` | Browser/site icon |
 | P0 | Topic icon set | `assets/icons/topics/*.svg` | Keynote topic cards |
 | P1 | CTA icon set | `assets/icons/cta/*.svg` | Buttons and conversion sections |
 | P1 | Audience icon set | `assets/icons/audiences/*.svg` | Audience-fit cards |
 | P1 | Brutalist dashboard panels | `assets/graphics/dashboard-panels.svg` | Background/UI accents |
 | P1 | Glitch divider graphics | `assets/graphics/glitch-dividers.svg` | Section separators |
 | P1 | Speaker badge / seal | `assets/graphics/speaker-badge.svg` | Media kit and credibility sections |
-| P1 | Media kit cover | `assets/media/media-kit-cover.jpg` | Speaker media kit cover |
-| P1 | One-sheet cover | `assets/media/one-sheet-cover.jpg` | Speaker one-sheet or PDF |
+| P1 | Founder story portrait | `assets/images/founder-story-portrait.jpg` | Speaker story section |
+| P1 | Media kit preview | `assets/images/media-kit-preview.jpg` | Media kit section |
+| P1 | Booking CTA energy | `assets/images/booking-cta-energy.jpg` | Final booking CTA visual |
 | P2 | Social card template | `assets/social/social-card-template.jpg` | LinkedIn/Instagram promo |
 | P2 | LinkedIn banner | `assets/social/linkedin-banner.jpg` | Speaker profile banner |
 | P2 | YouTube thumbnail template | `assets/social/youtube-thumbnail-template.jpg` | Reel/video thumbnail system |
@@ -76,8 +95,6 @@ No fake awards, no fake seals, no event names, no third-party logos, no corporat
 Output should be clean, vector-like, high contrast, readable at small and large sizes.
 ```
 
----
-
 ## 1.2 JF Monogram Mark
 
 **Suggested file:** `assets/logos/jf-monogram-mark.svg`  
@@ -91,8 +108,6 @@ Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Thick black outlin
 
 The mark should work as a favicon, social avatar, and small badge. Keep it simple, bold, and recognizable. No extra words, no fake logos, no event names.
 ```
-
----
 
 ## 1.3 Speaker Badge / Seal
 
@@ -129,8 +144,6 @@ Create one icon for each keynote topic:
 5. `reinvention-real-time.svg`
 6. `survival-to-strategy.svg`
 
-### Prompt
-
 ```txt
 Create a cohesive six-icon set for a future-of-money speaker landing page. Each icon should represent one keynote topic:
 
@@ -154,8 +167,6 @@ Use abstract symbols only:
 No readable text, no logos, no fake brands, no complex tiny details. Icons must be recognizable at small sizes and consistent as a set.
 ```
 
----
-
 ## 2.2 Audience Fit Icons
 
 **Suggested folder:** `assets/icons/audiences/`  
@@ -170,8 +181,6 @@ Create one icon for each audience:
 4. `startup-accelerators.svg`
 5. `creator-communities.svg`
 6. `economic-mobility-orgs.svg`
-
-### Prompt
 
 ```txt
 Create a cohesive icon set for audience-fit cards on a future-of-money speaker landing page. Icons should represent:
@@ -188,8 +197,6 @@ Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Thick black outlin
 No readable text, no logos, no fake institution names, no corporate brand marks. Make the set cohesive and usable inside square UI cards.
 ```
 
----
-
 ## 2.3 CTA Icon Set
 
 **Suggested folder:** `assets/icons/cta/`  
@@ -204,8 +211,6 @@ Create:
 4. `request-availability.svg`
 5. `send-inquiry.svg`
 6. `calendar-spark.svg`
-
-### Prompt
 
 ```txt
 Create a compact CTA icon set for a speaker profile landing page. Icons should represent:
@@ -224,38 +229,112 @@ Icons should be clean, high contrast, and usable next to buttons. No readable te
 
 ---
 
-## 2.4 Utility UI Icons
+# 3. Core Images
 
-**Suggested folder:** `assets/icons/ui/`  
-**Recommended format:** SVG  
-**Use:** Navigation, FAQ, accordions, cards
+## 3.1 Hero Speaker Image
 
-Create:
-
-1. `arrow-right-brutal.svg`
-2. `arrow-down-brutal.svg`
-3. `external-link.svg`
-4. `play-button.svg`
-5. `download.svg`
-6. `spark.svg`
-7. `signal.svg`
-8. `dashboard.svg`
-
-### Prompt
+**Current placeholder:** `assets/images/templates/hero-speaker-placeholder.svg`  
+**Final suggested file:** `assets/images/hero-speaker.jpg`  
+**Recommended size:** `1600×1000` or larger  
+**Use:** Hero visual
 
 ```txt
-Create a small utility UI icon set for a neobrutalist fintech speaker landing page. Icons should include arrows, external link, play button, download, spark, signal, and dashboard symbols.
+Create a cinematic hero image of Jason Feimster as a confident future-of-money speaker on stage, facing an unseen audience, with dramatic cyberpunk fintech lighting. The speaker should feel executive, inspirational, battle-tested, entrepreneurial, and modern — not a corporate stock-photo consultant. Surround the figure with abstract fintech dashboard elements, payment rails, AI interface fragments, market graph shapes, digital wealth symbols, and glowing geometric UI panels.
 
-Style: thick black outlines, hard shadows, off-white fill, electric lime, hot magenta, cyber blue, and acid yellow accents. Bold, simple, geometric, high contrast, readable at 24px and 48px.
+Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black and off-white base, electric lime, hot magenta, cyber blue, and acid yellow accents. Thick black outlines, hard shadows, bold shapes, high contrast, slight glitch energy, cinematic stage lighting. Make it feel like a keynote about AI, fintech, ownership, execution, and reinvention.
 
-No readable text, no logos, no extra decorative clutter.
+Composition: speaker centered or slightly off-center, strong posture, microphone or headset optional, stage lights behind, abstract dashboard halo in background. No readable text, no logos, no fake brand names, no fake audience signs.
+
+Aspect ratio: 16:10 or 8:5 landscape.
+```
+
+## 3.2 Audience / Event Energy Image
+
+**Current placeholder:** `assets/images/templates/audience-photo-placeholder.svg`  
+**Final suggested file:** `assets/images/audience-event-energy.jpg`  
+**Recommended size:** `1600×1000`  
+**Use:** Audience / tension section visual
+
+```txt
+Create a wide cinematic audience scene at a future-focused business, fintech, or entrepreneurship event. Show an energized diverse audience watching a speaker on stage, with laptops, notebooks, subtle phone glow, and futuristic stage lighting. The room should feel like a premium fintech conference mixed with underground founder energy — polished but not boring.
+
+Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white foundation, electric lime, hot magenta, cyber blue, acid yellow accents, thick graphic outlines, hard shadows, abstract dashboard panels, subtle glitch effects, bold contrast.
+
+Composition: audience in foreground and midground, speaker silhouette or stage glow in the background, no identifiable real people, no readable text, no logos, no event names. Make the energy feel like “the room woke up.”
+
+Aspect ratio: 16:10 or 3:2 landscape.
+```
+
+## 3.3 Speaker Reel Thumbnail
+
+**Current placeholder:** `assets/images/templates/speaker-reel-thumbnail.svg`  
+**Final suggested file:** `assets/images/speaker-reel-thumbnail.jpg`  
+**Recommended size:** `1280×720`  
+**Use:** Speaker reel section / video placeholder
+
+```txt
+Create a cinematic speaker reel thumbnail showing a bold keynote moment. Jason Feimster is on stage under dramatic cyberpunk fintech lighting, with an audience implied in the foreground. Add visual energy through abstract motion streaks, dashboard UI panels, glitch fragments, money/AI/ownership symbolism, and stage lights.
+
+Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white foundation with electric lime, hot magenta, cyber blue, and acid yellow accents. Thick border feeling, hard shadows, bold contrast, cinematic lighting, high-energy composition.
+
+Composition: speaker on stage, strong silhouette or semi-detailed figure, dramatic spotlight, room energy, empty central area where a play button can be added later. No readable text, no logos, no fake conference branding, no fake audience signage.
+
+Aspect ratio: 16:9, 1280×720.
+```
+
+## 3.4 Founder Story Portrait
+
+**Suggested file:** `assets/images/founder-story-portrait.jpg`  
+**Recommended size:** `1200×1600`  
+**Use:** Speaker story / belief section
+
+```txt
+Create a cinematic founder-speaker portrait of Jason Feimster as a resilient entrepreneur and veteran-coded operator standing in a dark fintech command-center environment. The subject should feel focused, strategic, battle-tested, and future-facing. Background includes abstract dashboards, AI workflow panels, digital money rails, and neon reflections.
+
+Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white base, electric lime, hot magenta, cyber blue, acid yellow accents, thick shadowed graphic elements, premium cinematic lighting, bold contrast.
+
+Mood: inspirational, serious, credible, not cheesy. No readable text, no logos, no fake medals, no fake awards, no military insignia unless explicitly provided later.
+
+Aspect ratio: 3:4 vertical.
+```
+
+## 3.5 Media Kit Preview
+
+**Suggested file:** `assets/images/media-kit-preview.jpg`  
+**Recommended size:** `1400×1000`  
+**Use:** Media kit section
+
+```txt
+Create a stylized speaker media kit preview laid out as a stack of bold documents, one-sheet pages, headshot cards, keynote topic cards, and booking info cards on a brutalist desk. Add cyberpunk fintech UI accents, neon sticky-note shapes, abstract QR-like blocks, and dashboard fragments.
+
+Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Off-white paper, black borders, hard shadows, electric lime, hot magenta, cyber blue, acid yellow. Premium but rebellious.
+
+No readable text, no fake logos, no fake testimonials, no fake event names. Use abstract placeholder lines instead of actual words.
+
+Aspect ratio: 7:5 landscape.
+```
+
+## 3.6 Booking CTA Energy Graphic
+
+**Suggested file:** `assets/images/booking-cta-energy.jpg`  
+**Recommended size:** `1600×900`  
+**Use:** Booking CTA / final section background
+
+```txt
+Create an energetic final booking CTA image showing a stage spotlight, electric neon geometric burst, abstract microphone silhouette, fintech dashboard cards, and audience energy waves. The image should feel like the moment before a keynote starts — urgent, premium, and memorable.
+
+Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black background, off-white contrast blocks, electric lime, hot magenta, cyber blue, acid yellow, thick borders, hard shadows, glitch accents.
+
+No readable text, no logos, no fake venue names, no fake conference branding. Leave room for CTA overlay if needed.
+
+Aspect ratio: 16:9.
 ```
 
 ---
 
-# 3. Background Graphics
+# 4. Background Graphics
 
-## 3.1 Futurist Fintech Dashboard Panels
+## 4.1 Futurist Fintech Dashboard Panels
 
 **Suggested file:** `assets/graphics/dashboard-panels.svg`  
 **Recommended format:** SVG  
@@ -269,9 +348,7 @@ Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white ba
 No readable text, no fake numbers, no real company logos, no brand names. Use abstract lines and blocks instead of legible content. Make it work as a background overlay with transparent or off-white sections.
 ```
 
----
-
-## 3.2 Glitch Divider Graphics
+## 4.2 Glitch Divider Graphics
 
 **Suggested file:** `assets/graphics/glitch-dividers.svg`  
 **Recommended format:** SVG  
@@ -283,97 +360,6 @@ Create a set of horizontal glitch divider graphics for a neobrutalist futurist f
 Style: black/off-white base with electric lime, hot magenta, cyber blue, and acid yellow accents. Thick black outlines, high contrast, cyberpunk glitch energy, premium but rebellious.
 
 No readable text, no logos, no numbers. Make the dividers usable across a wide website layout.
-```
-
----
-
-## 3.3 Pattern Texture Pack
-
-**Suggested file:** `assets/graphics/pattern-textures.svg`  
-**Recommended format:** SVG  
-**Use:** Body backgrounds, cards, overlays
-
-```txt
-Create a reusable pattern texture pack for a speaker landing page with neobrutalist futurist fintech energy. Include halftone dots, scanlines, grid patterns, abstract payment rails, AI node webs, subtle glitch blocks, and hard-shadow geometric marks.
-
-Palette: black, off-white, electric lime, hot magenta, cyber blue, acid yellow.
-
-The patterns should be modular, seamless or semi-seamless, and usable as backgrounds. No readable text, no logos, no fake data, no brand names.
-```
-
----
-
-## 3.4 Abstract Stage Background
-
-**Suggested file:** `assets/graphics/stage-background.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1920×1080`  
-**Use:** Hero, final CTA, booking section background
-
-```txt
-Create an abstract stage background for a future-of-money speaker landing page. Show dramatic stage lights, fintech dashboard glow, cyberpunk haze, abstract audience silhouettes, payment rail lines, and AI interface panels.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white base, electric lime, hot magenta, cyber blue, acid yellow, hard shadows, thick graphic geometry, cinematic lighting, subtle glitch effects.
-
-No readable text, no logos, no fake event names, no recognizable people. Leave negative space for overlaying CTA text and buttons.
-
-Aspect ratio: 16:9.
-```
-
----
-
-# 4. Media Kit Assets
-
-## 4.1 Media Kit Cover
-
-**Suggested file:** `assets/media/media-kit-cover.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1600×2000` or `8.5×11 portrait`
-
-```txt
-Create a speaker media kit cover for Jason Feimster, a future-of-money speaker focused on fintech, AI, ownership, entrepreneurship, execution, digital wealth, and reinvention.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white base, electric lime, hot magenta, cyber blue, acid yellow accents, thick black outlines, hard shadows, bold dashboard panels, glitch details, premium executive energy.
-
-Composition: cinematic speaker silhouette or abstract stage figure, fintech UI cards, AI interface fragments, payment rails, ownership/equity symbols, and strong negative space for title text to be added later.
-
-No fake logos, no fake awards, no fake event names, no fake testimonials. Avoid readable text unless it is only “Jason Feimster” and renders cleanly.
-
-Aspect ratio: vertical portrait.
-```
-
----
-
-## 4.2 Speaker One-Sheet Cover
-
-**Suggested file:** `assets/media/one-sheet-cover.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `2550×3300` for print-friendly letter size
-
-```txt
-Create a bold speaker one-sheet cover image for Jason Feimster. The visual should feel like a premium keynote booking asset for fintech, AI, entrepreneurship, ownership, execution, and reinvention.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white foundation, electric lime, hot magenta, cyber blue, acid yellow, thick borders, hard shadows, dashboard cards, glitch details, strong executive stage presence.
-
-Composition: speaker-stage energy, abstract audience silhouettes, fintech command-center panels, and clean negative space where bio, topics, and booking details can be placed later.
-
-No fake testimonials, no fake logos, no fake press badges, no fake client names, no readable placeholder copy.
-```
-
----
-
-## 4.3 Media Kit Interior Graphic
-
-**Suggested file:** `assets/media/media-kit-interior-graphic.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1600×1000`
-
-```txt
-Create a stylized speaker media kit interior graphic showing a stack of bold documents, keynote cards, headshot frames, topic cards, stage photo placeholders, and booking information cards arranged on a brutalist desk.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Off-white paper, thick black borders, hard shadows, electric lime, hot magenta, cyber blue, acid yellow accents, dashboard UI fragments, glitch details.
-
-No readable text, no fake logos, no fake client names, no fake testimonials. Use abstract placeholder lines where text would appear.
 ```
 
 ---
@@ -398,8 +384,6 @@ No readable text, no logos, no fake event names, no fake credentials.
 Aspect ratio: LinkedIn banner, 1584×396.
 ```
 
----
-
 ## 5.2 Social Card Template
 
 **Suggested file:** `assets/social/social-card-template.jpg`  
@@ -420,225 +404,40 @@ Aspect ratio: 4:5 vertical.
 
 ---
 
-## 5.3 YouTube / Reel Thumbnail Template
+# 6. Recommended Next Generation Order
 
-**Suggested file:** `assets/social/youtube-thumbnail-template.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1280×720`
+## Batch 1 — Use What Exists
 
-```txt
-Create a bold video thumbnail template for Jason Feimster’s speaker reel and future-of-money keynote clips. The image should feel high-energy, cinematic, fintech-native, and visually aggressive in a premium way.
+Already done in `index.html`:
 
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white foundation, electric lime, hot magenta, cyber blue, acid yellow, thick outlines, hard shadows, dashboard overlays, glitch effects, dramatic stage lighting.
+1. Use `assets/icons/favicon.svg` in the nav brand mark.
+2. Use `assets/images/templates/hero-speaker-placeholder.svg` in the hero.
+3. Use `assets/images/templates/audience-photo-placeholder.svg` in the tension/audience section.
+4. Use `assets/images/templates/speaker-reel-thumbnail.svg` in the reel section.
+5. Use `assets/logos/placeholders/logo-1.svg`, `logo-2.svg`, and `logo-3.svg` in the proof section.
 
-Composition: speaker stage silhouette or close-up speaker moment, audience glow, abstract fintech charts, AI interface panels, and strong open space where title text can be added later.
-
-No readable text, no logos, no fake event names, no fake client names.
-
-Aspect ratio: 16:9.
-```
-
----
-
-## 5.4 Email Signature Banner
-
-**Suggested file:** `assets/social/email-signature-banner.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1200×300`
-
-```txt
-Create a compact email signature banner for Jason Feimster’s future-of-money speaker brand. The banner should feel premium, sharp, fintech-native, and memorable.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white base, electric lime, hot magenta, cyber blue, acid yellow, thick borders, hard shadows, dashboard fragments, glitch details.
-
-Composition: abstract stage spotlight, small speaker silhouette, fintech UI strips, payment rail lines, and negative space for contact text to be added later.
-
-No readable text, no logos, no fake credentials, no fake event names.
-
-Aspect ratio: wide banner.
-```
-
----
-
-# 6. Booking & Conversion Assets
-
-## 6.1 Event Organizer Preview
-
-**Suggested file:** `assets/images/event-organizer-preview.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1600×1000`
-
-```txt
-Create a premium event organizer planning scene for a future-of-money speaker website. Show a laptop or tablet with abstract speaker booking dashboard cards, event schedule blocks, stage layout shapes, audience profile cards, and media kit assets spread across a desk.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Off-white desk surface, thick black outlines, hard shadows, electric lime, hot magenta, cyber blue, acid yellow, glitch UI details, premium founder/operator energy.
-
-No readable text, no logos, no fake event names, no fake client names. Use abstract lines and placeholder blocks where text would appear.
-
-Aspect ratio: 16:10.
-```
-
----
-
-## 6.2 Booking CTA Energy Graphic
-
-**Suggested file:** `assets/images/booking-cta-energy.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1600×900`
-
-```txt
-Create an energetic final booking CTA image for a future-of-money speaker landing page. Show a dramatic stage spotlight, electric neon geometric burst, abstract microphone silhouette, fintech dashboard cards, audience energy waves, and cyberpunk haze.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black background, off-white contrast blocks, electric lime, hot magenta, cyber blue, acid yellow, thick black outlines, hard shadows, glitch accents.
-
-Mood: urgent, premium, memorable, high-energy. It should feel like the moment before a keynote starts.
-
-No readable text, no logos, no fake venue names, no fake conference branding. Leave room for CTA overlay.
-
-Aspect ratio: 16:9.
-```
-
----
-
-## 6.3 QR Code Frame
-
-**Suggested file:** `assets/graphics/qr-code-frame.svg`  
-**Recommended format:** SVG  
-**Use:** Media kit, booking cards, conference handouts
-
-```txt
-Create a bold decorative QR code frame for a future-of-money speaker brand. The frame should surround a blank square area where a real QR code can be placed later.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Thick black borders, off-white base, electric lime, hot magenta, cyber blue, acid yellow, dashboard fragments, glitch blocks, hard shadows.
-
-Do not generate an actual QR code. Leave the center blank. No readable text, no logos, no fake scan labels.
-```
-
----
-
-# 7. Proof & Placeholder Assets
-
-## 7.1 Proof Placeholder Cards
-
-**Suggested file:** `assets/graphics/proof-placeholder-cards.svg`  
-**Recommended format:** SVG  
-**Use:** Placeholder for future logos, testimonials, event photos
-
-```txt
-Create a set of stylish proof placeholder cards for a speaker landing page. The cards should visually represent future proof assets without inventing any actual proof.
-
-Card types:
-- event logo placeholder
-- testimonial placeholder
-- audience photo placeholder
-- press/media placeholder
-- podcast/interview placeholder
-- stage photo placeholder
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Off-white cards, thick black borders, hard shadows, electric lime, hot magenta, cyber blue, acid yellow accents, abstract dashboard and stage motifs.
-
-No fake logos, no fake quotes, no fake event names, no fake media names, no readable text except generic abstract placeholder lines.
-```
-
----
-
-## 7.2 Testimonial Quote Card Template
-
-**Suggested file:** `assets/social/testimonial-card-template.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1080×1080`
-
-```txt
-Create a square testimonial quote card template for a future-of-money speaker brand. The design should have a bold empty quote area, a placeholder attribution area, and visual energy around the frame.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white foundation, electric lime, hot magenta, cyber blue, acid yellow, thick borders, hard shadows, glitch accents, dashboard-inspired frame.
-
-No actual testimonial text, no fake names, no logos, no fake company names. Use abstract placeholder lines only.
-
-Aspect ratio: 1:1 square.
-```
-
----
-
-# 8. Presentation Assets
-
-## 8.1 Speaker Deck Title Slide
-
-**Suggested file:** `assets/slides/speaker-title-slide.jpg`  
-**Recommended format:** JPG  
-**Recommended size:** `1920×1080`
-
-```txt
-Create a cinematic title slide background for Jason Feimster’s future-of-money keynote deck. The slide should feel like a premium fintech conference opening moment with cyberpunk founder energy.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white base, electric lime, hot magenta, cyber blue, acid yellow, thick graphic borders, hard shadows, dashboard UI panels, payment rail lines, AI interface fragments, glitch effects, dramatic stage lighting.
-
-Composition: abstract stage, audience silhouettes, fintech command-center visuals, and large negative space for keynote title text to be added later.
-
-No readable text, no logos, no fake event names, no fake sponsor marks.
-
-Aspect ratio: 16:9.
-```
-
----
-
-## 8.2 Section Divider Slide Backgrounds
-
-**Suggested folder:** `assets/slides/dividers/`  
-**Recommended format:** JPG  
-**Recommended size:** `1920×1080`
-
-Create:
-
-1. `fintech-divider.jpg`
-2. `ai-automation-divider.jpg`
-3. `ownership-divider.jpg`
-4. `execution-divider.jpg`
-5. `reinvention-divider.jpg`
-
-### Prompt
-
-```txt
-Create a set of five keynote section-divider slide backgrounds for a future-of-money speaker deck. Each should feel like a different chapter of the same visual universe:
-
-1. Fintech and digital wealth
-2. AI and automation
-3. Ownership and power
-4. Execution and operating systems
-5. Reinvention and future readiness
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Black/off-white foundation, electric lime, hot magenta, cyber blue, acid yellow, thick graphic borders, hard shadows, dashboard UI panels, glitch details, bold geometry.
-
-Leave strong negative space for section title text to be added later. No readable text, no logos, no fake data, no fake event names.
-
-Aspect ratio: 16:9.
-```
-
----
-
-# 9. Recommended Next Generation Order
-
-## Batch 1 — Site Essentials
-
-Generate these first:
-
-1. `assets/logos/jason-feimster-speaker-logo.svg`
-2. `assets/logos/jf-monogram-mark.svg`
-3. `assets/icons/favicon.svg`
-4. `assets/icons/topics/*.svg`
-5. `assets/icons/cta/*.svg`
-
-## Batch 2 — Landing Page Polish
+## Batch 2 — Replace Template Assets With Strong Final Images
 
 Generate next:
 
-1. `assets/graphics/dashboard-panels.svg`
-2. `assets/graphics/glitch-dividers.svg`
-3. `assets/images/event-organizer-preview.jpg`
-4. `assets/images/booking-cta-energy.jpg`
-5. `assets/graphics/proof-placeholder-cards.svg`
+1. `assets/images/hero-speaker.jpg`
+2. `assets/images/audience-event-energy.jpg`
+3. `assets/images/speaker-reel-thumbnail.jpg`
+4. `assets/images/founder-story-portrait.jpg`
+5. `assets/images/media-kit-preview.jpg`
+6. `assets/images/booking-cta-energy.jpg`
 
-## Batch 3 — Media Kit / Speaker Sales Assets
+## Batch 3 — Brand System Assets
+
+Generate after final page visuals:
+
+1. `assets/logos/jason-feimster-speaker-logo.svg`
+2. `assets/logos/jf-monogram-mark.svg`
+3. `assets/icons/topics/*.svg`
+4. `assets/icons/cta/*.svg`
+5. `assets/icons/audiences/*.svg`
+
+## Batch 4 — Sales Collateral Assets
 
 Generate after the site feels solid:
 
@@ -650,9 +449,35 @@ Generate after the site feels solid:
 
 ---
 
-# 10. Notes for Implementation
+# 7. Implementation Notes
 
-## Suggested folder structure
+## Current folder structure
+
+```txt
+assets/
+  icons/
+    favicon.svg
+    browserconfig.xml
+    README.md
+    topics/
+      README.md
+
+  images/
+    README.md
+    og-image.jpg
+    templates/
+      hero-speaker-placeholder.svg
+      audience-photo-placeholder.svg
+      speaker-reel-thumbnail.svg
+
+  logos/
+    placeholders/
+      logo-1.svg
+      logo-2.svg
+      logo-3.svg
+```
+
+## Suggested expanded folder structure
 
 ```txt
 assets/
@@ -672,16 +497,26 @@ assets/
     ui/
 
   images/
-    hero-speaker-placeholder.svg
-    audience-photo-placeholder.svg
-    og-image.jpg
-    speaker-reel-thumbnail.svg
-    event-organizer-preview.jpg
+    hero-speaker.jpg
+    audience-event-energy.jpg
+    speaker-reel-thumbnail.jpg
+    founder-story-portrait.jpg
+    media-kit-preview.jpg
     booking-cta-energy.jpg
+    event-organizer-preview.jpg
+    og-image.jpg
+    templates/
+      hero-speaker-placeholder.svg
+      audience-photo-placeholder.svg
+      speaker-reel-thumbnail.svg
 
   logos/
     jason-feimster-speaker-logo.svg
     jf-monogram-mark.svg
+    placeholders/
+      logo-1.svg
+      logo-2.svg
+      logo-3.svg
 
   media/
     media-kit-cover.jpg
@@ -735,8 +570,6 @@ Audience watching a high-energy keynote on fintech, AI, and the future of money.
 - Overly generic stock-photo corporate visuals
 
 ## Best visual direction
-
-The strongest assets should feel like:
 
 ```txt
 A fintech conference got hit by a punk-rock lightning bolt, then cleaned itself up enough to pass enterprise security review.
