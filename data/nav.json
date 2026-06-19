@@ -1,0 +1,7 @@
+[
+  { "label": "Topics", "href": "/topics", "type": "primary" },
+  { "label": "Audiences", "href": "/audiences", "type": "primary" },
+  { "label": "Blog", "href": "/blog", "type": "primary" },
+  { "label": "About", "href": "/about", "type": "primary" },
+  { "label": "Request Availability", "href": "/booking", "type": "cta" }
+]

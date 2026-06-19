@@ -1,0 +1,7 @@
+[
+  { "title": "Keynote", "slug": "keynote", "description": "High-energy future-facing talk for conferences, summits, universities, and corporate events." },
+  { "title": "Workshop", "slug": "workshop", "description": "Interactive session turning ideas into operating models, prompts, workflows, and next moves." },
+  { "title": "Fireside Chat", "slug": "fireside-chat", "description": "Conversational format for leadership, founder, fintech, AI, and reinvention themes." },
+  { "title": "Panel", "slug": "panel", "description": "Sharp perspective for panels on money, technology, entrepreneurship, ownership, and economic mobility." },
+  { "title": "Executive Session", "slug": "executive-session", "description": "Private strategy session for leadership teams navigating AI, innovation, and market change." }
+]
