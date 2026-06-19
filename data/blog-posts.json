@@ -1,0 +1,34 @@
+[
+  {
+    "title": "AI Automation and the New Economy",
+    "slug": "ai-automation-new-economy",
+    "description": "How AI is changing work, leverage, ownership, and the operating system required to stay relevant.",
+    "category": "AI & Automation",
+    "readTime": "6 min read",
+    "url": "/blog/ai-automation-new-economy.html"
+  },
+  {
+    "title": "The Future of Fintech and Digital Wealth",
+    "slug": "future-of-fintech-digital-wealth",
+    "description": "Why decentralized networks and digital wealth management are replacing traditional banking systems.",
+    "category": "Fintech",
+    "readTime": "5 min read",
+    "url": "/blog/future-of-fintech-digital-wealth.html"
+  },
+  {
+    "title": "Ownership is the New Status",
+    "slug": "ownership-is-the-new-status",
+    "description": "Moving beyond salaries to building real equity and capital in the digital age.",
+    "category": "Entrepreneurship",
+    "readTime": "7 min read",
+    "url": "/blog/ownership-is-the-new-status.html"
+  },
+  {
+    "title": "From Survival Mode to Strategy Mode",
+    "slug": "from-survival-mode-to-strategy-mode",
+    "description": "How to escape the daily grind and build systems for long-term leverage and success.",
+    "category": "Strategy",
+    "readTime": "4 min read",
+    "url": "/blog/from-survival-mode-to-strategy-mode.html"
+  }
+]
