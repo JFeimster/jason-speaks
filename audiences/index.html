@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Jason Feimster Speaker Profile Landing Page
+    Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler
+    Keep proof honest: no fake logos, testimonials, awards, client names, or event history.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jason Feimster | Future of Money Speaker for Fintech, AI & Ownership</title>
+  <meta name="description" content="Book Jason Feimster for high-energy keynotes on fintech, AI, digital wealth, ownership, entrepreneurship, execution, and reinvention in the new economy." />
+  <link rel="canonical" href="https://jason-speaks.vercel.app/" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#c4ff00" />
+
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml" />
+
+  <meta property="og:title" content="Jason Feimster | Future of Money Speaker" />
+  <meta property="og:description" content="Bring bold, future-focused energy to your stage with talks on fintech, AI, ownership, execution, and the new economy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jason-speaks.vercel.app/" />
+  <meta property="og:image" content="https://jason-speaks.vercel.app/assets/images/og-image.jpg" />
+  <meta property="og:image:alt" content="Jason Feimster speaker profile preview graphic." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jason Feimster | Future of Money Speaker" />
+  <meta name="twitter:description" content="Book a speaker who helps audiences understand money, technology, ownership, and ambition before the future arrives." />
+  <meta name="twitter:image" content="https://jason-speaks.vercel.app/assets/images/og-image.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jason Feimster",
+    "jobTitle": "Future of Money Speaker",
+    "description": "Speaker on fintech, AI, digital wealth, ownership, entrepreneurship, execution, and reinvention in the new economy.",
+    "url": "https://jason-speaks.vercel.app/",
+    "knowsAbout": ["Fintech", "Artificial Intelligence", "Digital Wealth", "Entrepreneurship", "Ownership", "Automation", "Economic Mobility"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #050505;
+      --paper: #fff9e8;
+      --paper-2: #f7f2df;
+      --lime: #b6ff00;
+      --cyan: #00e5ff;
+      --magenta: #ff2bd6;
+      --yellow: #ffd400;
+      --white: #ffffff;
+      --muted: #3b3b3b;
+      --border: 4px solid var(--ink);
+      --shadow: 9px 9px 0 var(--ink);
+      --shadow-small: 5px 5px 0 var(--ink);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 43, 214, 0.16), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(0, 229, 255, 0.18), transparent 25%),
+        linear-gradient(135deg, var(--paper) 0%, #ffeeb7 100%);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    :focus-visible { outline: 4px solid var(--magenta); outline-offset: 4px; }
+    .skip-link { position: absolute; left: -999px; top: 12px; background: var(--lime); border: var(--border); padding: 10px 14px; z-index: 999; font-weight: 1000; }
+    .skip-link:focus { left: 12px; }
+    .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+
+    .nav { position: sticky; top: 0; z-index: 50; background: rgba(255, 249, 232, 0.97); backdrop-filter: blur(12px); border-bottom: var(--border); }
+    .nav-inner { min-height: 72px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: clamp(12px, 2vw, 24px); padding: 8px 0; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; min-width: 0; font-weight: 1000; letter-spacing: -0.06em; line-height: 1.05; text-transform: uppercase; font-size: clamp(0.84rem, 1.2vw, 0.98rem); }
+    .brand-mark { flex: 0 0 auto; width: 52px; height: 52px; display: grid; place-items: center; background: var(--ink); border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); transform: rotate(-4deg); overflow: hidden; }
+    .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
+    .brand-text { white-space: nowrap; }
+    .nav-links { display: none; justify-self: center; align-items: center; gap: 14px; font-weight: 1000; font-size: 0.84rem; text-transform: uppercase; }
+    .nav-links a, .more-button { border: 0; border-bottom: 3px solid transparent; background: transparent; color: inherit; font: inherit; font-weight: 1000; text-transform: uppercase; padding: 4px 0; cursor: pointer; }
+    .nav-links a:hover, .nav-links a:focus, .more-button:hover, .more-button:focus { border-bottom-color: var(--magenta); }
+    .nav-more { position: relative; }
+    .nav-more[open] .more-button { border-bottom-color: var(--magenta); }
+    .nav-more summary { list-style: none; }
+    .nav-more summary::-webkit-details-marker { display: none; }
+    .more-menu { position: absolute; right: 0; top: calc(100% + 12px); min-width: 220px; display: grid; gap: 6px; border: var(--border); border-radius: 18px; background: var(--white); box-shadow: var(--shadow-small); padding: 12px; }
+    .more-menu a { border-bottom: 0; padding: 8px 10px; border-radius: 10px; }
+    .more-menu a:hover, .more-menu a:focus { background: var(--lime); }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: var(--border); border-radius: 999px; padding: 12px 18px; background: var(--lime); color: var(--ink); font-weight: 1000; text-transform: uppercase; box-shadow: var(--shadow-small); transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease; cursor: pointer; min-height: 46px; text-align: center; }
+    .btn:hover, .btn:focus { transform: translate(4px, 4px); box-shadow: 1px 1px 0 var(--ink); background: var(--yellow); }
+    .btn.secondary { background: var(--cyan); }
+    .btn.dark { background: var(--ink); color: var(--white); box-shadow: 6px 6px 0 var(--magenta); }
+    .btn.full { width: 100%; }
+    .nav-cta { white-space: nowrap; }
+
+    .hero { min-height: calc(100vh - 72px); padding: clamp(14px, 2vw, 26px) 0 clamp(14px, 2vw, 26px); display: grid; align-items: start; position: relative; }
+    .hero-grid { display: grid; gap: clamp(22px, 3vw, 42px); align-items: start; }
+    .eyebrow, .kicker { width: fit-content; border: var(--border); border-radius: 999px; padding: 7px 12px; font-weight: 1000; text-transform: uppercase; box-shadow: var(--shadow-small); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; background: var(--magenta); color: var(--white); transform: rotate(-1deg); margin-bottom: 12px; }
+    .kicker { background: var(--yellow); }
+    .hero h1, h2 { margin: 0; line-height: 0.92; letter-spacing: -0.083em; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2.25rem, 4.25vw, 4.15rem); max-width: 690px; }
+    h2 { font-size: clamp(2.25rem, 6.5vw, 5.25rem); max-width: 940px; }
+    .glitch { position: relative; display: inline-block; text-shadow: 4px 4px 0 var(--cyan), -4px -4px 0 var(--magenta); }
+    .hero-copy { margin: 13px 0 0; font-size: clamp(1rem, 1.28vw, 1.12rem); max-width: 670px; font-weight: 800; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 16px; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 13px; }
+    .chip { background: var(--white); border: 3px solid var(--ink); border-radius: 999px; padding: 7px 11px; font-weight: 900; font-size: 0.8rem; text-transform: uppercase; }
+
+    .hero-visual { width: min(100%, 430px); justify-self: end; border: var(--border); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); padding: 14px; transform: rotate(1deg); overflow: hidden; }
+    .hero-visual img { width: 100%; aspect-ratio: 4 / 5; max-height: min(58vh, 520px); object-fit: cover; object-position: 50% 26%; border: 3px solid var(--white); border-radius: 16px; background: var(--ink); }
+    .hero-visual-caption { margin: 10px 4px 0; font-weight: 1000; text-transform: uppercase; font-size: 0.78rem; color: var(--white); }
+
+    .ticker { border-top: var(--border); border-bottom: var(--border); background: var(--cyan); overflow: hidden; white-space: nowrap; font-weight: 1000; text-transform: uppercase; font-size: clamp(1.05rem, 3vw, 1.5rem); }
+    .ticker-track { display: inline-flex; gap: 30px; padding: 14px 0; animation: ticker 24s linear infinite; }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    section { padding: clamp(52px, 7vw, 84px) 0; }
+    .section-head { display: grid; gap: 14px; margin-bottom: 28px; }
+    .lead { font-size: clamp(1.05rem, 2vw, 1.25rem); max-width: 780px; font-weight: 700; color: var(--muted); }
+    .grid { display: grid; gap: 18px; }
+    .grid-2, .grid-3 { display: grid; gap: 22px; }
+    .card { background: var(--white); border: var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+    .card.alt { background: var(--lime); }
+    .card.cyan { background: var(--cyan); }
+    .card.magenta { background: var(--magenta); color: var(--white); }
+    .card.dark { background: var(--ink); color: var(--white); box-shadow: 9px 9px 0 var(--magenta); }
+    .card h3 { margin: 0 0 10px; font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1; letter-spacing: -0.055em; text-transform: uppercase; }
+    .card p { margin: 0; font-weight: 700; }
+    .topic-badge { width: 58px; height: 58px; border: 3px solid var(--ink); border-radius: 16px; display: grid; place-items: center; background: var(--yellow); box-shadow: var(--shadow-small); font-size: 1.7rem; font-weight: 1000; margin-bottom: 18px; }
+    .topic-number { font-weight: 1000; font-size: 0.9rem; margin-bottom: 10px; }
+    .stat-strip { display: grid; gap: 16px; margin-top: 24px; }
+    .stat { border: var(--border); background: var(--white); border-radius: 20px; padding: 20px; box-shadow: var(--shadow-small); }
+    .stat strong { display: block; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1; letter-spacing: -0.07em; }
+    .stat span { font-weight: 900; text-transform: uppercase; }
+    .logo-grid { display: grid; gap: 18px; }
+    .proof-label { min-height: 92px; display: grid; place-items: center; text-align: center; border: 3px dashed var(--ink); border-radius: 18px; padding: 18px; background: var(--paper); font-weight: 1000; text-transform: uppercase; }
+    .reel-card { position: relative; display: block; overflow: hidden; border: var(--border); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); padding: 12px; }
+    .reel-card img { width: 100%; aspect-ratio: 16 / 10; max-height: 390px; object-fit: cover; object-position: center; border: 3px solid var(--white); border-radius: 16px; background: var(--ink); }
+    .reel-card .play-mark { position: absolute; top: 28px; left: 28px; width: 82px; height: 82px; display: grid; place-items: center; border: 4px solid var(--white); border-radius: 999px; background: var(--lime); color: var(--ink); box-shadow: 7px 7px 0 var(--magenta); font-size: 2.1rem; margin: 0; }
+    .reel-caption { margin: 12px 4px 0; font-weight: 1000; text-transform: uppercase; font-size: 0.84rem; color: var(--white); }
+    .video-placeholder { min-height: 300px; display: grid; place-items: center; text-align: center; border: var(--border); border-radius: 18px; background: linear-gradient(135deg, var(--ink), #161616); color: var(--white); box-shadow: var(--shadow); padding: 24px; }
+    .play-mark { width: 92px; height: 92px; display: grid; place-items: center; border: 4px solid var(--white); border-radius: 999px; background: var(--lime); color: var(--ink); box-shadow: 7px 7px 0 var(--magenta); font-size: 2.4rem; margin-bottom: 18px; }
+    .comparison { overflow-x: auto; border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--white); }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    th, td { border: 3px solid var(--ink); padding: 18px; text-align: left; font-weight: 800; }
+    th { background: var(--ink); color: var(--white); text-transform: uppercase; }
+    td.highlight { background: var(--lime); }
+    form { display: grid; gap: 16px; }
+    label { display: block; font-weight: 1000; text-transform: uppercase; margin-bottom: 6px; }
+    input, select, textarea { width: 100%; border: 3px solid var(--ink); border-radius: 14px; padding: 13px 14px; background: var(--white); color: var(--ink); font: inherit; font-weight: 750; }
+    textarea { min-height: 130px; resize: vertical; }
+    .form-note { font-weight: 800; font-size: 0.9rem; }
+    details { border: var(--border); border-radius: 18px; background: var(--white); padding: 18px; box-shadow: var(--shadow-small); }
+    .nav-more { border: 0; border-radius: 0; background: transparent; padding: 0; box-shadow: none; }
+    summary { cursor: pointer; font-weight: 1000; text-transform: uppercase; }
+    details p { font-weight: 700; }
+    .floating-cta { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 30; }
+    .footer { border-top: var(--border); background: var(--ink); color: var(--white); padding: 34px 0 92px; }
+    .footer-inner { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; font-weight: 900; }
+    .reveal { animation: popIn 500ms ease both; }
+    @keyframes popIn { from { opacity: 0; transform: translateY(18px) rotate(-1deg); } to { opacity: 1; transform: translateY(0) rotate(0deg); } }
+
+    @media (min-width: 760px) {
+      .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(320px, 0.66fr); }
+      .grid-2 { grid-template-columns: 1fr 0.9fr; align-items: center; }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+      .stat-strip, .logo-grid { grid-template-columns: repeat(3, 1fr); }
+      .floating-cta { display: none; }
+      .footer { padding-bottom: 34px; }
+    }
+
+    @media (min-width: 1100px) {
+      .nav-links { display: flex; }
+    }
+
+    @media (max-width: 1099px) {
+      .nav-inner { grid-template-columns: 1fr auto; }
+      .nav-links { display: none; }
+      .nav-cta { padding-inline: 16px; font-size: 0.86rem; }
+      .hero-visual { justify-self: center; }
+      .hero { min-height: auto; }
+    }
+
+    @media (max-width: 759px) {
+      body { padding-bottom: 92px; }
+      .container { width: min(100% - 24px, var(--max)); }
+      .nav-inner { min-height: 64px; gap: 10px; }
+      .brand-mark { width: 44px; height: 44px; }
+      .brand-text { max-width: 170px; white-space: normal; }
+      .nav-cta { display: none; }
+      .hero { padding-top: 28px; }
+      .hero h1 { font-size: clamp(2.35rem, 11vw, 3.85rem); }
+      .hero-visual img { max-height: 360px; }
+      .btn { width: 100%; }
+      section { padding: 56px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a class="brand" href="/" aria-label="Jason Feimster speaker profile home">
+        <span class="brand-mark" aria-hidden="true"><img src="/assets/icons/favicon.svg" width="52" height="52" alt="" /></span>
+        <span class="brand-text">Jason Feimster<br />Speaker Profile</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="/topics/">Topics</a>
+        <a href="/audiences/">Audiences</a>
+        <a href="/proof.html">Proof</a>
+        <a href="/blog/">Blog</a>
+        <a href="/media-kit.html">Media Kit</a>
+        <a href="/booking.html">Booking</a>
+        <details class="nav-more">
+          <summary class="more-button">More</summary>
+          <div class="more-menu">
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/manifesto.html">Manifesto</a>
+            <a href="/privacy.html">Privacy</a>
+            <a href="/404.html">404 Preview</a>
+          </div>
+        </details>
+      </nav>
+
+      <a href="/booking.html" class="btn nav-cta">Request Availability</a>
+    </div>
+  </header>
+
+<main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Audience Fit</div>
+          <h1 id="hero-title">Built for Rooms That Refuse to <span class="glitch">Get Left Behind</span>.</h1>
+          <p class="hero-copy">Find out fast if Jason is the right speaker to activate your audience and give them the language, urgency, and operating mindset to move before the future politely runs them over.</p>
+          <div class="cta-row">
+            <a href="/booking.html" class="btn">Bring This Energy to Your Stage</a>
+          </div>
+        </div>
+
+        <aside class="hero-visual reveal" aria-label="Speaker hero image">
+          <img src="/assets/images/audience-photo-placeholder.png" width="1600" height="960" alt="Cinematic audience watching a future-focused fintech and entrepreneurship keynote." />
+          <p class="hero-visual-caption">Audience profile preview image — audience energy.</p>
+        </aside>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Future of fintech</span><span>◆</span><span>AI & automation</span><span>◆</span><span>Money, power & ownership</span><span>◆</span><span>The hustler’s operating system</span><span>◆</span><span>Reinvention in real time</span><span>◆</span><span>Future of fintech</span><span>◆</span><span>AI & automation</span><span>◆</span><span>Money, power & ownership</span><span>◆</span><span>The hustler’s operating system</span><span>◆</span><span>Reinvention in real time</span><span>◆</span></div></div>
+
+    <section aria-labelledby="audiences-title">
+        <div class="container">
+            <div class="section-head"><span class="kicker">Who this is for</span><h2 id="audiences-title">12 Core Audience Segments</h2><p class="lead">Jason is at his best when the room is ambitious, curious, and feeling the pressure to adapt.</p></div>
+            <div class="grid-3">
+                <div class="card"><h3>Fintech conferences</h3><p>Audiences tracking payments, AI, and the future of economic opportunity.</p></div>
+                <div class="card cyan"><h3>AI and innovation events</h3><p>Rooms that need to move from passive awareness to active execution.</p></div>
+                <div class="card alt"><h3>Entrepreneurship summits</h3><p>Founders building the next wave of companies and shifting the culture.</p></div>
+                <div class="card magenta"><h3>Corporate innovation teams</h3><p>Organizations that need their people energized around change and adaptation.</p></div>
+                <div class="card dark"><h3>Universities and business schools</h3><p>Students navigating career pressure and the AI-shaped workforce.</p></div>
+                <div class="card"><h3>Startup accelerators</h3><p>Builders moving from zero to one and needing execution leverage.</p></div>
+                <div class="card alt"><h3>Founder communities</h3><p>Networks of ambitious people looking for sharper thinking around ownership.</p></div>
+                <div class="card cyan"><h3>Creator communities</h3><p>Digital builders turning attention into sustainable businesses.</p></div>
+                <div class="card magenta"><h3>Economic mobility organizations</h3><p>Rooms focused on financial access, empowerment, and closing the gap.</p></div>
+                <div class="card dark"><h3>Veteran entrepreneur groups</h3><p>Resilient operators who need the strategies to win in the civilian economy.</p></div>
+                <div class="card"><h3>Business credit / funding communities</h3><p>People looking for capital, leverage, and the rules of modern wealth.</p></div>
+                <div class="card alt"><h3>Financial literacy events</h3><p>Audiences moving from basic budgeting to ownership and asset-building.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-labelledby="needs-title">
+        <div class="container grid-2">
+            <div class="section-head"><span class="kicker">The Tension</span><h2 id="needs-title">What Each Audience Needs</h2><p class="lead">Every room has a specific tension. Jason's job is to name the tension, validate it, and give the audience a framework to break through it.</p></div>
+            <div class="grid">
+                <div class="card"><h3>Corporate & Fintech</h3><p><strong>The Tension:</strong> The speed of AI and digital platforms is making old playbooks obsolete. <br><strong>The Need:</strong> A sense of urgency mixed with permission to innovate without waiting for a perfect plan.</p></div>
+                <div class="card cyan"><h3>Founders & Creators</h3><p><strong>The Tension:</strong> High ambition, high noise, and not enough leverage. <br><strong>The Need:</strong> The Hustler's OS—strategies for execution, resilience, and treating their work like a true asset.</p></div>
+                <div class="card dark"><h3>Students & Communities</h3><p><strong>The Tension:</strong> The rules of economic mobility changed while they weren't looking. <br><strong>The Need:</strong> A raw, realistic conversation about money, power, and ownership in the new economy.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-labelledby="formats-title">
+        <div class="container">
+            <div class="section-head"><span class="kicker">Delivery</span><h2 id="formats-title">Best-fit speaking formats</h2></div>
+            <div class="grid-3">
+                <div class="card alt"><h3>High-Energy Keynotes</h3><p>The main stage driver. 45-60 minutes of insight, cultural relevance, and future-shock energy designed to wake up the room.</p></div>
+                <div class="card"><h3>Fireside Chats & Q&A</h3><p>Unscripted, sharp, and conversational. Best for founder events, accelerators, and intimate rooms where real talk wins.</p></div>
+                <div class="card cyan"><h3>Deep-Dive Workshops</h3><p>For corporate teams and universities. Tactical sessions focused on building the 'Hustler's OS' and adapting to AI.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-labelledby="topics-title">
+        <div class="container">
+            <div class="section-head"><span class="kicker">Alignment</span><h2 id="topics-title">Recommended topics by audience</h2></div>
+            <div class="grid-2">
+                <div class="card dark"><h3>Fintech & Innovation Rooms</h3><p><strong>Topics:</strong> Future of Fintech & Digital Wealth; AI, Automation & the New Economy.</p></div>
+                <div class="card alt"><h3>Founders & Accelerators</h3><p><strong>Topics:</strong> The Hustler’s Operating System; Reinvention in Real Time.</p></div>
+                <div class="card magenta"><h3>Corporate Teams</h3><p><strong>Topics:</strong> From Survival Mode to Strategy Mode; AI Leverage.</p></div>
+                <div class="card"><h3>Universities & Communities</h3><p><strong>Topics:</strong> Money, Power & Ownership; The Hustler’s Operating System.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-labelledby="book-room-title">
+        <div class="container">
+            <div class="card magenta">
+                <span class="kicker" style="background: var(--lime); color: var(--ink);">Book The Room</span>
+                <h2 id="book-room-title" style="margin-top: 18px;">Is Jason the right speaker for your room?</h2>
+                <p class="lead" style="color: var(--white);">If you need poetry, look elsewhere. If you need a room activated and ready to execute in the new economy, let's talk.</p>
+                <div class="cta-row">
+                    <a href="/booking.html" class="btn">Book Me to Speak</a>
+                    <a href="/media-kit.html" class="btn secondary">Request the Speaker Kit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="media-kit" aria-labelledby="kit-title"><div class="container grid-2"><div class="section-head"><span class="kicker">Media kit</span><h2 id="kit-title">Everything bookers need to say yes faster.</h2><p class="lead">Add a downloadable speaker kit with bio versions, headshots, talk descriptions, audience fit, intro copy, AV preferences, and booking details.</p></div><div class="card alt"><h3>Recommended media kit contents</h3><p>Short bio, long bio, approved headshots, keynote topics, speaker intro, stage photos, real testimonial pull quotes, verified event logos, AV requirements, contact details, and booking process.</p><div class="cta-row"><a href="/media-kit.html" class="btn dark">Download Media Kit</a></div></div></div></section>
+
+    <section class="booking" id="booking" aria-labelledby="booking-title"><div class="container grid-2"><div class="section-head"><span class="kicker">Book the keynote</span><h2 id="booking-title">Give your audience the spark, strategy, and future-facing perspective to move differently.</h2><p class="lead">Share your event details and topic interest. This form is designed for conferences, corporate teams, universities, accelerators, associations, and community organizations.</p><div class="card" style="color: var(--ink);"><h3>Best-fit events</h3><p>Keynotes, fireside chats, panels, workshops, leadership offsites, student events, innovation summits, fintech conferences, founder programs, and economic mobility events.</p></div></div><div class="card" style="color: var(--ink);"><form id="bookingForm" action="#" method="post" novalidate><div><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Booker" /></div><div><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@event.com" /></div><div><label for="organization">Organization</label><input id="organization" name="organization" type="text" required placeholder="Conference / Company / University" /></div><div class="grid-2"><div><label for="date">Event date</label><input id="date" name="date" type="date" /></div><div><label for="audience">Audience size</label><select id="audience" name="audience"><option value="">Select one</option><option>Under 100</option><option>100–500</option><option>500–1,500</option><option>1,500+</option><option>Not sure yet</option></select></div></div><div><label for="topic">Topic interest</label><select id="topic" name="topic" required><option value="">Select a keynote theme</option><option>Future of Fintech & Digital Wealth</option><option>The Hustler’s Operating System</option><option>AI, Automation & the New Economy</option><option>Money, Power & Ownership</option><option>Reinvention in Real Time</option><option>From Survival Mode to Strategy Mode</option><option>Custom talk / not sure yet</option></select></div><div><label for="message">Tell me about the event</label><textarea id="message" name="message" placeholder="Event goals, location, audience, budget range, and what you want people to feel or do after the talk."></textarea></div><button class="btn full" type="submit">Request Availability</button><p class="form-note" id="formMessage" aria-live="polite">Placeholder form only. Connect this to your CRM, email platform, or booking workflow before publishing.</p></form></div></div></section>
+
+    <section class="faq" aria-labelledby="faq-title"><div class="container"><div class="section-head"><span class="kicker">FAQ</span><h2 id="faq-title">For the person booking the room.</h2></div><div class="grid"><details><summary>What kind of events are the best fit?</summary><p>Fintech conferences, AI and innovation events, entrepreneurship summits, universities, corporate transformation programs, founder communities, and organizations focused on economic mobility or future-readiness.</p></details><details><summary>Can the keynote be customized?</summary><p>Yes. The core message can be tailored to your audience, industry, event theme, and desired outcome. Add a pre-event briefing call to align on tone, examples, and audience priorities.</p></details><details><summary>Do you offer workshops or panels?</summary><p>Yes. This page supports keynotes, fireside chats, panels appearances, workshops, and executive sessions. Use the booking form to describe the format.</p></details><details><summary>Where should pricing go?</summary><p>If you publish pricing, add a simple “Speaking fees start at [amount]” line near the booking form. If fees vary by travel, format, and audience size, keep the CTA inquiry-based.</p></details><details><summary>What proof should be added before launch?</summary><p>Add real event logos, speaker reel footage, audience photos, organizer testimonials, press mentions, podcast appearances, and specific audience feedback. Do not use fake logos or invented testimonials.</p></details><details><summary>What happens after someone submits the form?</summary><p>Replace the placeholder action with your booking workflow. Ideally, the visitor should receive a confirmation message and you should get their event details in your CRM or inbox.</p></details></div></div></section>
+
+    <section aria-labelledby="final-title"><div class="container"><div class="card magenta"><span class="kicker" style="background: var(--lime); color: var(--ink);">Final CTA</span><h2 id="final-title" style="margin-top: 18px;">Ready to wake up the room?</h2><p class="lead" style="color: var(--white);">Book a speaker who can connect ambition, technology, ownership, and execution in a way your audience can feel — then use.</p><div class="cta-row"><a href="/booking.html" class="btn">Book Me to Speak</a><a href="/media-kit.html" class="btn secondary">Request the Speaker Kit</a></div></div></div></section>
+  </main>
+
+  <div class="floating-cta"><a href="/booking.html" class="btn full">Book Me to Speak</a></div>
+
+  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> Jason Feimster. All rights reserved.</span><span>Booking inquiries · Media kit · Speaker reel coming soon</span></div></footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) { anchor.addEventListener('click', function(event) { var target = document.querySelector(this.getAttribute('href')); if (target) { event.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
+    document.querySelectorAll('.more-menu a').forEach(function(link) { link.addEventListener('click', function() { var menu = this.closest('details'); if (menu) menu.removeAttribute('open'); }); });
+    var form = document.getElementById('bookingForm');
+    var message = document.getElementById('formMessage');
+    form.addEventListener('submit', function(event) { event.preventDefault(); if (!form.checkValidity()) { message.textContent = 'Please complete the required fields: name, email, organization, and topic interest.'; message.style.color = '#b00020'; form.reportValidity(); return; } message.textContent = 'Demo success state: connect this form to your booking workflow before publishing.'; message.style.color = '#050505'; });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if ('IntersectionObserver' in window) { var observer = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('reveal'); observer.unobserve(entry.target); } }); }, { threshold: 0.12 }); document.querySelectorAll('section .card, section .section-head, .hero-visual, .reel-card').forEach(function(el) { observer.observe(el); }); }
+  </script>
+</body>
+</html>
