@@ -1,0 +1,12 @@
+{
+  "primaryNav": ["/topics", "/audiences", "/blog", "/about", "/booking"],
+  "footerNav": ["/proof", "/media-kit", "/booking", "/contact", "/manifesto", "/privacy"],
+  "corePages": ["/", "/topics", "/audiences", "/about", "/booking", "/contact", "/manifesto", "/media-kit", "/proof", "/privacy", "/reel", "/faq"],
+  "topicPages": ["/topics/future-of-fintech-digital-wealth", "/topics/hustlers-operating-system", "/topics/ai-automation-new-economy", "/topics/money-power-ownership", "/topics/reinvention-in-real-time", "/topics/survival-mode-to-strategy-mode"],
+  "audiencePages": ["/audiences/fintech-conferences", "/audiences/ai-innovation-events", "/audiences/corporate-innovation", "/audiences/universities-business-schools", "/audiences/startup-accelerators", "/audiences/founder-communities", "/audiences/creator-communities", "/audiences/veteran-entrepreneurs", "/audiences/economic-mobility", "/audiences/business-funding-communities"],
+  "blogPages": ["/blog", "/blog/ai-automation", "/blog/future-of-money", "/blog/ownership", "/blog/reinvention", "/blog/entrepreneurship", "/blog/veteran-founder", "/blog/field-notes"],
+  "brandPages": ["/brands/moonshine-capital", "/brands/full-time-hustler", "/brands/juliet-foxtrot-ventures", "/brands/funding-ecosystem", "/brands/ai-automation"],
+  "personalBrandPages": ["/newsletter", "/essays", "/jason-os", "/principles", "/field-manual", "/origin", "/why-i-speak", "/beliefs", "/unfair-advantage", "/underdog-doctrine", "/marine-lessons", "/timeline"],
+  "communityPages": ["/community", "/founder-nights", "/cashflow-game-nights", "/workshops", "/office-hours", "/join", "/invite", "/partners", "/sponsor", "/private-events"],
+  "utilityPages": ["/tools", "/ai-agents", "/resources", "/stack", "/projects", "/request-availability", "/speaking-fees", "/event-planner-guide", "/av-requirements", "/speaker-intro", "/short-bio", "/long-bio", "/headshots", "/downloads", "/press"]
+}
