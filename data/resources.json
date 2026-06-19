@@ -1,0 +1,9 @@
+[
+  { "title": "Media Kit", "slug": "media-kit", "url": "/media-kit", "category": "booking" },
+  { "title": "Speaker Intro", "slug": "speaker-intro", "url": "/speaker-intro", "category": "event-planner" },
+  { "title": "Short Bio", "slug": "short-bio", "url": "/short-bio", "category": "event-planner" },
+  { "title": "Long Bio", "slug": "long-bio", "url": "/long-bio", "category": "event-planner" },
+  { "title": "Headshots", "slug": "headshots", "url": "/headshots", "category": "media" },
+  { "title": "AV Requirements", "slug": "av-requirements", "url": "/av-requirements", "category": "event-planner" },
+  { "title": "Downloads", "slug": "downloads", "url": "/downloads", "category": "utility" }
+]
