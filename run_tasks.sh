@@ -1,22 +1,32 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Script to start 5 concurrent Jules sessions for independent tasks on the Jason Speaks Landing Page
+# Starts independent Jules sessions for Jason Speaks landing page improvements.
+# Run from the repository root.
+#
+# Guardrails:
+# - Keep the site static and Vercel-friendly.
+# - Do not introduce React, Next.js, Astro, Tailwind, or a build step.
+# - Do not invent testimonials, logos, awards, event history, client names, or audience numbers.
+# - Preserve generated root image assets already used in index.html.
 
-echo "Starting Jules sessions for concurrent improvements..."
+echo "Starting Jules sessions for Jason Speaks improvements..."
 
 # Task 1: Extract CSS
-jules remote new --repo . --session "Extract the large <style> block from index.html into css/styles.css and link it in the HTML header." &
+jules remote new --repo . --session "Extract the large inline <style> block from index.html into css/styles.css. Link it with /css/styles.css. Preserve the current visual design and generated image references." &
 
 # Task 2: Extract JavaScript
-jules remote new --repo . --session "Extract the <script> block at the bottom of index.html into js/main.js and link it at the end of the HTML body." &
+jules remote new --repo . --session "Extract the inline page-behavior <script> block from index.html into js/main.js. Load it with <script src=\"/js/main.js\" defer></script>. Preserve current smooth scrolling, year injection, and interaction behavior." &
 
-# Task 3: Form endpoint
-jules remote new --repo . --session "Replace the placeholder booking form action in index.html with a Formspree endpoint so it can receive real submissions without a backend." &
+# Task 3: Real inquiry path
+jules remote new --repo . --session "Replace fake booking form behavior with a static-friendly real inquiry path. Use a mailto fallback unless a real configured endpoint is present. Do not invent or hardcode a Formspree/CRM endpoint." &
 
-# Task 4: Responsive Navigation
-jules remote new --repo . --session "Add a responsive hamburger menu toggle for mobile users to the navigation in index.html, and update the CSS accordingly." &
+# Task 4: Responsive navigation
+jules remote new --repo . --session "Add an accessible mobile navigation toggle for the existing static landing page. Preserve desktop nav behavior, add ARIA state, close the menu after link selection, and respect reduced-motion preferences." &
 
-# Task 5: OG Image
-jules remote new --repo . --session "Create a placeholder image at assets/images/og-image.jpg as referenced in index.html for social sharing." &
+# Task 5: Image performance and validation
+jules remote new --repo . --session "Audit generated root image usage in index.html. Ensure live references do not point back to /assets/images/templates/*.svg, add useful alt text, dimensions/loading hints where appropriate, and keep assets/images/README.md aligned with actual usage." &
 
-echo "All sessions started in the background. Use 'jules remote list' to check their status."
+wait
+
+echo "All Jules sessions completed or exited. Review each resulting branch/PR before merging."
