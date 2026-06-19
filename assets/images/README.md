@@ -1,6 +1,6 @@
 # Jason Speaks — Image Assets
 
-This folder stores image and visual-template assets for the `jason-speaks` static speaker landing page.
+This folder stores image assets for the `jason-speaks` static speaker landing page.
 
 The visual system is:
 
@@ -10,25 +10,32 @@ Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Bold, high-energy, inspir
 
 ---
 
-## Current Repo Assets
+## Current Live Assets
 
-These assets currently exist and are now referenced by `index.html`.
+These generated assets are now referenced by `index.html`.
 
-| File | Current Use | Replace Later With |
+| File | Current Use | Notes |
 |---|---|---|
-| `assets/images/templates/hero-speaker-placeholder.svg` | Hero visual card | Real Jason stage photo, cinematic speaker portrait, or generated hero portrait |
-| `assets/images/templates/audience-photo-placeholder.svg` | Audience / event-energy visual in the tension section | Real audience photo or generated audience scene |
-| `assets/images/templates/speaker-reel-thumbnail.svg` | Speaker reel placeholder | Real speaker reel thumbnail or verified YouTube embed thumbnail |
-| `assets/images/og-image.jpg` | Open Graph / social preview image | Final branded social-share graphic if this is still placeholder quality |
+| `assets/images/hero-speaker-placeholder.png` | Hero visual and founder/story visual | Generated Jason speaker illustration. Despite the filename, this is now the active hero asset. Rename later to `hero-speaker.png` if desired. |
+| `assets/images/audience-photo-placeholder.png` | Audience / event-energy visual in the tension section | Generated audience scene. Despite the filename, this is now the active audience asset. Rename later to `audience-event-energy.png` if desired. |
+| `assets/images/og-image.jpg` | Open Graph / social preview image | Current social preview used by metadata. |
+| `assets/images/og-image.png` | Speaker reel / social video placeholder | Used visually in the reel section until a verified speaker reel thumbnail or video embed exists. |
+| `assets/images/jason-feimster-logo-1.png` | Speaker brand asset in proof and media-kit sections | Generated branded logo image. Use only as Jason-owned branding, not third-party proof. |
+| `assets/images/jf-monogram-mark.png` | Header/nav mark and compact brand asset | Generated JF monogram mark. Also suitable for social avatar/badge usage. |
+| `assets/images/future-fintech-digital-wealth.png` | Topic icon 01 | Used in the Future of Fintech & Digital Wealth keynote card. |
+| `assets/images/hustlers-operating-system.png` | Topic icon 02 | Used in the Hustler’s Operating System keynote card. |
+| `assets/images/ai-automation-new-economy.png` | Topic icon 03 | Used in the AI, Automation & the New Economy keynote card. |
+| `assets/images/money-power-ownership.png` | Topic icon 04 | Used in the Money, Power & Ownership keynote card. |
+| `assets/images/reinvention-real-time.png` | Topic icon 05 | Used in the Reinvention in Real Time keynote card. |
+| `assets/images/survival-to-strategy.png` | Topic icon 06 | Used in the From Survival Mode to Strategy Mode keynote card. |
 
 Related visual assets outside this folder:
 
 | File | Current Use |
 |---|---|
-| `assets/icons/favicon.svg` | Browser favicon and nav brand mark |
-| `assets/logos/placeholders/logo-1.svg` | Honest proof placeholder card |
-| `assets/logos/placeholders/logo-2.svg` | Honest proof placeholder card |
-| `assets/logos/placeholders/logo-3.svg` | Honest proof placeholder card |
+| `assets/icons/favicon.svg` | Browser favicon |
+| `assets/images/templates/*.svg` | Legacy fallback templates only; not currently used by the live page |
+| `assets/logos/placeholders/*.svg` | Legacy honest proof placeholders only; not currently used by the live page |
 
 ---
 
@@ -38,12 +45,17 @@ Related visual assets outside this folder:
 
 ```html
 /assets/icons/favicon.svg
-/assets/images/templates/hero-speaker-placeholder.svg
-/assets/images/templates/audience-photo-placeholder.svg
-/assets/images/templates/speaker-reel-thumbnail.svg
-/assets/logos/placeholders/logo-1.svg
-/assets/logos/placeholders/logo-2.svg
-/assets/logos/placeholders/logo-3.svg
+/assets/images/jf-monogram-mark.png
+/assets/images/hero-speaker-placeholder.png
+/assets/images/audience-photo-placeholder.png
+/assets/images/future-fintech-digital-wealth.png
+/assets/images/hustlers-operating-system.png
+/assets/images/ai-automation-new-economy.png
+/assets/images/money-power-ownership.png
+/assets/images/reinvention-real-time.png
+/assets/images/survival-to-strategy.png
+/assets/images/og-image.png
+/assets/images/jason-feimster-logo-1.png
 /assets/images/og-image.jpg
 ```
 
@@ -51,9 +63,23 @@ Keep these paths stable unless the HTML is updated in the same commit.
 
 ---
 
-## Recommended Next Images To Generate
+## Recommended Rename Cleanup
 
-Generate these next in priority order.
+The current hero and audience files still include `placeholder` in the filename even though they are now active generated assets. Optional cleanup:
+
+| Current Path | Cleaner Future Path |
+|---|---|
+| `assets/images/hero-speaker-placeholder.png` | `assets/images/hero-speaker.png` |
+| `assets/images/audience-photo-placeholder.png` | `assets/images/audience-event-energy.png` |
+| `assets/images/og-image.png` | `assets/images/speaker-reel-thumbnail.png` |
+
+Do this only in a dedicated commit that updates all HTML, docs, and metadata references together.
+
+---
+
+## Remaining Images To Generate Later
+
+Generate these later if you want deeper polish.
 
 ### 1. `assets/images/founder-story-portrait.jpg`
 
@@ -71,23 +97,7 @@ Mood: inspirational, serious, credible, not cheesy. No readable text, no logos, 
 Aspect ratio: 3:4 vertical.
 ```
 
-### 2. `assets/images/keynote-topics-dashboard.jpg`
-
-**Use:** Signature topics section visual  
-**Recommended size:** `1600×1000`  
-**Format:** JPG
-
-```txt
-Create an abstract fintech keynote topics dashboard with six bold visual modules representing: future of fintech and digital wealth, the hustler’s operating system, AI and automation, money power and ownership, reinvention, and survival mode to strategy mode. Each module should look like a brutalist UI card with icons, graphs, geometric shapes, and futuristic dashboard accents.
-
-Style: Neobrutalist × Futurist Fintech × Cyberpunk Hustler. Thick black borders, hard shadows, off-white background, electric lime, hot magenta, cyber blue, acid yellow, oversized UI cards, glitch details.
-
-No readable text, no logos, no fake data, no fake brand names. Make it feel like a high-energy speaker command center.
-
-Aspect ratio: 16:10 landscape.
-```
-
-### 3. `assets/images/fintech-command-center.jpg`
+### 2. `assets/images/fintech-command-center.jpg`
 
 **Use:** Mechanism section / “stage energy meets fintech command center”  
 **Recommended size:** `1600×900`  
@@ -103,7 +113,7 @@ No readable text, no logos, no real company names, no fake numbers. Make it feel
 Aspect ratio: 16:9.
 ```
 
-### 4. `assets/images/media-kit-preview.jpg`
+### 3. `assets/images/media-kit-preview.jpg`
 
 **Use:** Media kit section  
 **Recommended size:** `1400×1000`  
@@ -119,7 +129,7 @@ No readable text, no fake logos, no fake testimonials, no fake event names. Use 
 Aspect ratio: 7:5 landscape.
 ```
 
-### 5. `assets/images/booking-cta-energy.jpg`
+### 4. `assets/images/booking-cta-energy.jpg`
 
 **Use:** Booking CTA / final section background  
 **Recommended size:** `1600×900`  
@@ -144,19 +154,19 @@ Use direct, useful alt text. Avoid keyword stuffing.
 Examples:
 
 ```txt
-Stylized placeholder image for Jason Feimster speaking on fintech, AI, ownership, and the future of money.
+Stylized cyberpunk illustration of Jason Feimster speaking on stage with fintech and AI dashboards behind him.
 ```
 
 ```txt
-Stylized audience placeholder for a high-energy fintech, AI, and entrepreneurship keynote.
+Wide cinematic audience at a future-focused fintech and entrepreneurship event watching a speaker on stage.
 ```
 
 ```txt
-Cyberpunk speaker reel thumbnail placeholder for Jason Feimster.
+Icon representing AI automation and the new economy.
 ```
 
 ```txt
-Placeholder card for a future real event logo.
+JF monogram logo mark for Jason Feimster.
 ```
 
 ---
